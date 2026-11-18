@@ -89,11 +89,35 @@ create table if not exists past_projects (
 );
 create index if not exists idx_past_projects_region on past_projects (region);
 
--- Embeddings for similar-project search (OpenAI text-embedding-3-small = 1536 dimensions).
--- Filled by `python -m backend.embed_projects`. No ANN index: the table has a few dozen rows,
--- so an exact scan is faster and more accurate; add an hnsw index if it grows to thousands.
+-- Embeddings (pgvector). One shared table for every text source: rows are keyed by (source_table, source_key).
+-- Dimensions are fixed at 1536 (text-embedding-3-large is requested with dimensions=1536). Filled by
+-- `python -m backend.embed_all`. No ANN index: a few thousand rows scan exactly in milliseconds; add an
+-- hnsw index on (embedding) if it grows to hundreds of thousands.
 create extension if not exists vector with schema extensions;
-alter table past_projects add column if not exists embedding extensions.vector(1536);
+
+create table if not exists embeddings (
+    source_table  text not null,
+    source_key    text not null,
+    content       text not null,
+    content_hash  text not null,
+    model         text not null,
+    embedding     extensions.vector(1536) not null,
+    updated_at    timestamptz not null default now(),
+    primary key (source_table, source_key)
+);
+alter table embeddings enable row level security;
+
+create or replace function match_embeddings(query_embedding extensions.vector(1536), source_name text, match_count integer default 5)
+returns table (source_key text, content text, similarity double precision)
+language sql stable
+set search_path = public, extensions
+as $$
+    select e.source_key, e.content, 1 - (e.embedding <=> query_embedding) as similarity
+    from embeddings e
+    where e.source_table = source_name
+    order by e.embedding <=> query_embedding
+    limit match_count;
+$$;
 
 create or replace function match_past_projects(query_embedding extensions.vector(1536), match_count integer default 5)
 returns table (
@@ -109,12 +133,15 @@ as $$
            p.primary_bandwidth, p.secondary_bandwidth, p.bandwidth_unit, p.cloud_platforms,
            p.sla_uptime_pct, p.duration_months, p.total_cost, p.setup_cost,
            p.monthly_operational, p.lessons_learned, p.source,
-           1 - (p.embedding <=> query_embedding) as similarity
+           1 - (e.embedding <=> query_embedding) as similarity
     from past_projects p
-    where p.embedding is not null
-    order by p.embedding <=> query_embedding
+    join embeddings e on e.source_table = 'past_projects' and e.source_key = p.project_id
+    order by e.embedding <=> query_embedding
     limit match_count;
 $$;
+
+-- Project embeddings used to live in a column; they now live in the shared embeddings table.
+alter table past_projects drop column if exists embedding;
 
 create table if not exists mcgw_pricing (
     id               bigint generated always as identity primary key,

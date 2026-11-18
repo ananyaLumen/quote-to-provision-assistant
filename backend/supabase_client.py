@@ -1,10 +1,11 @@
 """Supabase client for the backend. Server-side only: uses the secret key, which bypasses RLS."""
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 SUPABASE_URL = (os.getenv("SUPABASE_URL") or "").strip()
 # The secret key is required: every table has RLS enabled with no policies, so the publishable key sees nothing.

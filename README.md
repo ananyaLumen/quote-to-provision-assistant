@@ -21,6 +21,12 @@ Source files in `data/` are loaded into Supabase by `backend/load_data.py`.
 | `service_order_failures` | ServiceOrderFailure Root Cause Agent (x3), EOD_Failures | 3,077 |
 | `inventory_dq_issues` | InventoryDataQualityAgent.xlsx | 2,956 |
 | `provisioning_orders`, `bom_items`, `site_allocations` | produced by the assistant | 0 |
+| `embeddings` | pgvector embeddings of the text sources below, written by `backend/embed_all.py` | 5,977 |
+
+Embedded sources: `past_projects` (16), `product_catalog` (23), `locations` (109), `mcgw_pricing` (212),
+`service_order_failures` (2,695 rows that have a message), `inventory_dq_issues` (2,922 rows with issues).
+The structured operational tables (ports, EVCs, UNI sites, provisioning requests) are deliberately not embedded:
+they are identifiers and numbers that SQL filters handle better. Search with the `match_embeddings(query_embedding, source_name, match_count)` SQL function.
 
 Rows carry a `source` / `data_quality_label` so mock, synthetic and real data can be told apart.
 Wide Excel exports keep their key fields as columns and the rest as compact JSONB (`details`).
@@ -39,7 +45,8 @@ copy backend\.env.example backend\.env        # then fill in the values (incl. O
    `python backend\apply_schema.py` (needs `DATABASE_URL`; URL-encode special characters in the password,
    e.g. `@` becomes `%40`). This also enables the `vector` extension used for similar-project search.
 2. Load the data: `python backend\load_data.py` (re-runnable; `--dry-run` transforms without writing, `--only evcs` for one table).
-3. Embed the past projects: `python -m backend.embed_projects` (run from the repo root; re-run when `past_projects` changes).
+3. Embed the text sources: `python -m backend.embed_all` (run from the repo root; incremental, so re-run whenever the data changes;
+   `--dry-run` shows what would be embedded, `--only product_catalog` limits it to one source).
 4. Start the API from the repo root: `uvicorn backend.main:app --reload --port 8000`, then open http://localhost:8000/docs.
 
 `python backend\etl.py --stats` reports row counts, column fill rates and payload sizes without touching the database.
