@@ -30,18 +30,31 @@ and only the backend (secret key) can access the data, because it includes real 
 ## Setup
 
 ```powershell
-cd backend
-python -m venv venv; .\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-copy .env.example .env        # then fill in the values
+python -m venv backend\venv; .\backend\venv\Scripts\Activate.ps1
+pip install -r requirements.txt -r backend\requirements.txt
+copy backend\.env.example backend\.env        # then fill in the values (incl. OPENAI_API_KEY)
 ```
 
-1. Create the tables: paste `backend/sql/schema.sql` into the Supabase SQL Editor, or run `python apply_schema.py`
-   (needs `DATABASE_URL`; URL-encode special characters in the password, e.g. `@` becomes `%40`).
-2. Load the data: `python load_data.py` (re-runnable; use `--dry-run` to transform without writing, `--only evcs` for one table).
-3. Start the API: `uvicorn main:app --reload --port 8000`, then open http://localhost:8000/docs.
+1. Create the tables: paste `backend/sql/schema.sql` into the Supabase SQL Editor (safe to re-run), or run
+   `python backend\apply_schema.py` (needs `DATABASE_URL`; URL-encode special characters in the password,
+   e.g. `@` becomes `%40`). This also enables the `vector` extension used for similar-project search.
+2. Load the data: `python backend\load_data.py` (re-runnable; `--dry-run` transforms without writing, `--only evcs` for one table).
+3. Embed the past projects: `python -m backend.embed_projects` (run from the repo root; re-run when `past_projects` changes).
+4. Start the API from the repo root: `uvicorn backend.main:app --reload --port 8000`, then open http://localhost:8000/docs.
 
-`python etl.py --stats` reports row counts, column fill rates and payload sizes without touching the database.
+`python backend\etl.py --stats` reports row counts, column fill rates and payload sizes without touching the database.
+
+## Quote pipeline
+
+`POST /quote` runs the pipeline in `backend/pipeline.py` over a shared `QuoteState` (see `docs/module-contract.md`).
+
+| Step | Module | Status |
+|---|---|---|
+| Requirement extraction | `agents/extractor.py` (OpenAI structured output, `schemas/requirement.py`) | implemented |
+| Similar-project retrieval | `agents/retriever.py` (OpenAI embeddings + pgvector `match_past_projects`) | implemented |
+| Validation, network, software, proposal | `agents/validator.py`, `network.py`, `software.py`, `proposal.py` | stubs |
+
+The data endpoints (`/api/products`, `/api/locations`, `/api/projects`, ...) live in `backend/api/data_routes.py`.
 
 ## Schemas
 

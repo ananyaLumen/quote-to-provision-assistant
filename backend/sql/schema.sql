@@ -89,6 +89,33 @@ create table if not exists past_projects (
 );
 create index if not exists idx_past_projects_region on past_projects (region);
 
+-- Embeddings for similar-project search (OpenAI text-embedding-3-small = 1536 dimensions).
+-- Filled by `python -m backend.embed_projects`. No ANN index: the table has a few dozen rows,
+-- so an exact scan is faster and more accurate; add an hnsw index if it grows to thousands.
+create extension if not exists vector with schema extensions;
+alter table past_projects add column if not exists embedding extensions.vector(1536);
+
+create or replace function match_past_projects(query_embedding extensions.vector(1536), match_count integer default 5)
+returns table (
+    project_id text, name text, description text, client text, location text, region text,
+    primary_bandwidth numeric, secondary_bandwidth numeric, bandwidth_unit text, cloud_platforms jsonb,
+    sla_uptime_pct numeric, duration_months integer, total_cost numeric, setup_cost numeric,
+    monthly_operational numeric, lessons_learned jsonb, source text, similarity double precision
+)
+language sql stable
+set search_path = public, extensions
+as $$
+    select p.project_id, p.name, p.description, p.client, p.location, p.region,
+           p.primary_bandwidth, p.secondary_bandwidth, p.bandwidth_unit, p.cloud_platforms,
+           p.sla_uptime_pct, p.duration_months, p.total_cost, p.setup_cost,
+           p.monthly_operational, p.lessons_learned, p.source,
+           1 - (p.embedding <=> query_embedding) as similarity
+    from past_projects p
+    where p.embedding is not null
+    order by p.embedding <=> query_embedding
+    limit match_count;
+$$;
+
 create table if not exists mcgw_pricing (
     id               bigint generated always as identity primary key,
     source_file      text not null,
