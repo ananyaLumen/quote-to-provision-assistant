@@ -1,0 +1,37 @@
+/* Styles for the live-data views. Uses the theme variables from styles.css. */
+.live-error{border:1px solid #6b2a35;background:linear-gradient(180deg,#2a1520,#1a1220);border-radius:16px;padding:24px;max-width:640px;margin:8px auto 0}
+.live-error h3{margin:0 0 8px;font-size:18px;color:#ffb4bd;display:flex;align-items:center;gap:10px}
+.live-error p{margin:0 0 18px;color:#d8c2c8;line-height:1.55;word-break:break-word}
+.live-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.summary-text{margin:0 0 14px;font-size:15.5px;line-height:1.65;color:#dfe8fb}
+.summary-points{margin:0;padding-left:18px;color:#b9c6df;line-height:1.7;font-size:14px}
+.summary-source{margin-top:14px;font-size:12px;color:var(--muted)}
+
+.row-list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.row-item{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel2)}
+.row-item strong{display:block;font-size:13.5px;text-transform:capitalize;margin-bottom:2px}
+.row-item span.row-text{display:block;font-size:13px;color:#aab8d2;line-height:1.5}
+.row-item small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.45}
+
+.badge{flex:none;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid transparent;margin-top:1px}
+.badge.passed,.badge.low{color:var(--green);background:#0f2f2a;border-color:#1c5a4b}
+.badge.review,.badge.medium{color:#f5b94c;background:#33270f;border-color:#6a4f19}
+.badge.failed,.badge.high{color:#ff8a96;background:#331620;border-color:#6b2a35}
+.badge.real{color:var(--green);background:#0f2f2a;border-color:#1c5a4b}
+.badge.mock,.badge.synthetic{color:#f5b94c;background:#33270f;border-color:#6a4f19}
+.badge.new{color:var(--cyan);background:#0d2a35;border-color:#1b5566}
+.badge.existing{color:var(--muted);background:#16233a;border-color:var(--line)}
+
+.card-stack{display:flex;flex-direction:column;gap:18px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:980px){.two-col{grid-template-columns:1fr}}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:6px 14px;font-size:13.5px;margin:0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;color:#dfe8fb;word-break:break-word}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr.total td{font-weight:700;border-top:1px solid var(--line)}
+.note-text{margin:12px 0 0;font-size:12.5px;line-height:1.55;color:var(--muted)}
+.empty-state{padding:28px;text-align:center;color:var(--muted);line-height:1.6}
+.step-time{font-variant-numeric:tabular-nums}
+.more-sites{position:absolute;right:16px;bottom:14px;font-size:12px;color:var(--muted)}
