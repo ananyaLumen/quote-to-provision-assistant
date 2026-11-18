@@ -4,7 +4,7 @@ from fastapi import APIRouter
 
 from schemas.quote_request import QuoteRequest
 from schemas.quote_state import QuoteState
-
+from backend.pipeline import run_pipeline
 
 router = APIRouter()
 
@@ -24,4 +24,6 @@ async def create_quote(request: QuoteRequest):
         raw_text=request.requirement_text,
     )
 
-    return state
+    result = await run_pipeline(state)
+
+    return result
