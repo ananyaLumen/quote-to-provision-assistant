@@ -1,0 +1,349 @@
+{
+  "provisioning_id": "PROV-2024-A7K2M9",
+  "provisioning_date": "2024-11-18",
+  "status": "submitted",
+  "customer_info": {
+    "customer_id": "CUST-2024-001",
+    "customer_name": "[MOCK] RetailMax Corporation",
+    "customer_contact": {
+      "email": "network-team@retailmax.com",
+      "phone": "+1-415-555-0123",
+      "primary_contact": "Sarah Chen, Network Director"
+    },
+    "project_name": "[MOCK] West Coast Regional Network Upgrade",
+    "project_id": "PROJ-RET-2024-Q4"
+  },
+  "deployment_schedule": {
+    "planned_start_date": "2024-12-15",
+    "planned_completion_date": "2025-02-28",
+    "deployment_phases": [
+      {
+        "phase_number": 1,
+        "phase_name": "Los Angeles Hub Deployment",
+        "description": "Primary hub installation with security and load balancing",
+        "start_date": "2024-12-15",
+        "end_date": "2025-01-15",
+        "affected_sites": ["SITE-010"]
+      },
+      {
+        "phase_number": 2,
+        "phase_name": "San Francisco Secondary Site",
+        "description": "Secondary site connectivity and redundancy setup",
+        "start_date": "2025-01-16",
+        "end_date": "2025-02-15",
+        "affected_sites": ["SITE-010"]
+      },
+      {
+        "phase_number": 3,
+        "phase_name": "Testing and Optimization",
+        "description": "Full system testing, failover validation, and performance tuning",
+        "start_date": "2025-02-16",
+        "end_date": "2025-02-28",
+        "affected_sites": ["SITE-010"]
+      }
+    ],
+    "maintenance_windows": [
+      {
+        "date": "2024-12-21",
+        "start_time": "02:00",
+        "duration_minutes": 120,
+        "affected_services": ["Internet gateway", "Monitoring services"]
+      },
+      {
+        "date": "2025-01-05",
+        "start_time": "03:00",
+        "duration_minutes": 90,
+        "affected_services": ["All connectivity services"]
+      }
+    ]
+  },
+  "bill_of_materials": [
+    {
+      "line_item_id": "BOM-0001",
+      "product_id": "NP-CONN-002",
+      "product_name": "[MOCK] Cloud Interconnect AWS 100G",
+      "product_type": "connectivity",
+      "quantity": 2,
+      "unit_of_measure": "circuits",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 2,
+          "deployment_role": "primary",
+          "rack_location": "Rack-B-18",
+          "port_assignment": {
+            "interface_type": "AWS Direct Connect",
+            "interface_id": "dxcon-0a1b2c3d",
+            "vlan_id": 101
+          }
+        }
+      ],
+      "customization_config": {
+        "connection_speed": "100Gbps",
+        "enable_bfd": true,
+        "mtu_size": 1500
+      },
+      "pricing": {
+        "unit_setup_cost": 45000,
+        "unit_monthly_cost": 18000,
+        "total_setup_cost": 90000,
+        "total_monthly_cost": 36000,
+        "discount_percent": 10,
+        "currency": "USD"
+      },
+      "notes": "Primary cloud interconnect for redundancy and geographic load distribution"
+    },
+    {
+      "line_item_id": "BOM-0002",
+      "product_id": "NP-FW-001",
+      "product_name": "[MOCK] Enterprise Security Gateway 40G",
+      "product_type": "security",
+      "quantity": 1,
+      "unit_of_measure": "units",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 1,
+          "deployment_role": "primary",
+          "rack_location": "Rack-B-20"
+        }
+      ],
+      "customization_config": {
+        "threat_prevention": true,
+        "ssl_inspection": true,
+        "geo_blocking_enabled": false,
+        "log_retention_days": 180
+      },
+      "pricing": {
+        "unit_setup_cost": 25000,
+        "unit_monthly_cost": 3500,
+        "total_setup_cost": 25000,
+        "total_monthly_cost": 3500,
+        "discount_percent": 5,
+        "currency": "USD"
+      },
+      "notes": "High-throughput firewall with advanced threat prevention for 40Gbps throughput"
+    },
+    {
+      "line_item_id": "BOM-0003",
+      "product_id": "NP-LB-001",
+      "product_name": "[MOCK] Enterprise Load Balancer 100G",
+      "product_type": "load_balancing",
+      "quantity": 1,
+      "unit_of_measure": "units",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 1,
+          "deployment_role": "primary",
+          "rack_location": "Rack-B-21"
+        }
+      ],
+      "customization_config": {
+        "ssl_termination": true,
+        "l7_routing": true,
+        "ddos_protection": true,
+        "session_persistence": "cookie"
+      },
+      "pricing": {
+        "unit_setup_cost": 35000,
+        "unit_monthly_cost": 8000,
+        "total_setup_cost": 35000,
+        "total_monthly_cost": 8000,
+        "discount_percent": 0,
+        "currency": "USD"
+      },
+      "notes": "Layer 4-7 load balancer with DDoS mitigation for retail POS workloads"
+    },
+    {
+      "line_item_id": "BOM-0004",
+      "product_id": "NP-WAF-001",
+      "product_name": "[MOCK] Web Application Firewall 50G",
+      "product_type": "security",
+      "quantity": 1,
+      "unit_of_measure": "units",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 1,
+          "deployment_role": "primary",
+          "rack_location": "Rack-B-22"
+        }
+      ],
+      "customization_config": {
+        "bot_protection": true,
+        "api_protection": true,
+        "rate_limiting": "100 requests/second per IP",
+        "geo_filtering": ["CN", "RU", "KP"]
+      },
+      "pricing": {
+        "unit_setup_cost": 20000,
+        "unit_monthly_cost": 4500,
+        "total_setup_cost": 20000,
+        "total_monthly_cost": 4500,
+        "discount_percent": 5,
+        "currency": "USD"
+      },
+      "notes": "WAF for e-commerce web application protection against OWASP top 10"
+    },
+    {
+      "line_item_id": "BOM-0005",
+      "product_id": "NP-DXP-001",
+      "product_name": "[MOCK] Digital Experience Platform",
+      "product_type": "monitoring",
+      "quantity": 1,
+      "unit_of_measure": "licences",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 1,
+          "deployment_role": "primary"
+        }
+      ],
+      "customization_config": {
+        "users_monitored": 100000,
+        "synthetic_monitoring": true,
+        "real_user_monitoring": true,
+        "alerting_enabled": true
+      },
+      "pricing": {
+        "unit_setup_cost": 15000,
+        "unit_monthly_cost": 3000,
+        "total_setup_cost": 15000,
+        "total_monthly_cost": 3000,
+        "discount_percent": 0,
+        "currency": "USD"
+      },
+      "notes": "Continuous monitoring of user experience across all retail sites"
+    },
+    {
+      "line_item_id": "BOM-0006",
+      "product_id": "NP-CONSUL-001",
+      "product_name": "[MOCK] Professional Services - Network Design",
+      "product_type": "services",
+      "quantity": 1,
+      "unit_of_measure": "hours",
+      "site_allocation": [
+        {
+          "site_id": "SITE-010",
+          "site_name": "[MOCK] Los Angeles - West Coast",
+          "quantity_at_site": 60,
+          "deployment_role": "primary"
+        }
+      ],
+      "customization_config": {
+        "architecture_design_hours": 20,
+        "security_assessment_hours": 15,
+        "capacity_planning_hours": 15,
+        "implementation_planning_hours": 10
+      },
+      "pricing": {
+        "unit_setup_cost": 25000,
+        "unit_monthly_cost": 0,
+        "total_setup_cost": 25000,
+        "total_monthly_cost": 0,
+        "discount_percent": 0,
+        "currency": "USD"
+      },
+      "notes": "Expert consulting covering architecture design, security assessment, and implementation planning"
+    }
+  ],
+  "network_architecture": {
+    "architecture_type": "hub_spoke",
+    "primary_site": "SITE-010",
+    "regions_covered": ["North America"],
+    "total_sites": 1,
+    "total_bandwidth": {
+      "value": 100,
+      "unit": "Gbps"
+    },
+    "redundancy_model": "active_active",
+    "cloud_integration": {
+      "cloud_providers": ["AWS"],
+      "direct_connect_required": true,
+      "hybrid_cloud": false
+    }
+  },
+  "implementation_details": {
+    "implementation_model": "phased",
+    "implementation_partner": {
+      "partner_name": "[MOCK] NetSolutions Consulting",
+      "partner_id": "PARTNER-2024-NSC",
+      "primary_contact": "Michael Rodriguez, Deployment Lead",
+      "contact_email": "michael.rodriguez@netsolutions.com"
+    },
+    "testing_requirements": {
+      "pre_production_testing": true,
+      "load_testing_required": true,
+      "security_testing_required": true,
+      "failover_testing_required": true,
+      "user_acceptance_testing": true
+    },
+    "training_requirements": {
+      "operator_training_hours": 16,
+      "admin_training_hours": 24,
+      "escalation_training_hours": 8,
+      "training_format": ["on_site", "remote"]
+    },
+    "documentation_deliverables": [
+      "Network design document with topology diagrams",
+      "Security architecture and policy documentation",
+      "Operational runbook for daily management",
+      "Disaster recovery and business continuity plan",
+      "Performance baseline and optimization report",
+      "Security audit and compliance verification report"
+    ]
+  },
+  "cost_summary": {
+    "total_setup_cost": 210000,
+    "total_monthly_cost": 59000,
+    "first_year_total": 918000,
+    "three_year_tco": 2334000,
+    "discounts_applied": 15000,
+    "currency": "USD"
+  },
+  "approval_workflow": {
+    "technical_approval": {
+      "approver": "James Wilson, VP of Infrastructure",
+      "approval_date": "2024-11-16",
+      "comments": "Architecture aligns with our multi-cloud strategy and exceeds performance SLA requirements."
+    },
+    "financial_approval": {
+      "approver": "Patricia Martinez, CFO",
+      "approval_date": "2024-11-17",
+      "budget_code": "2024-Q4-CAPEX-NET-450K"
+    },
+    "customer_acceptance": {
+      "customer_signoff": "Sarah Chen, Network Director, RetailMax Corporation",
+      "signoff_date": "2024-11-18"
+    }
+  },
+  "attachments": {
+    "network_diagram_url": "https://internal.company.com/diagrams/PROV-2024-A7K2M9-topology.pdf",
+    "proposal_id": "PROP-2024-RET-Q4-001",
+    "quote_id": "QUOTE-2024-RET-Q4-001",
+    "supporting_documents": [
+      {
+        "document_name": "Security Assessment Report",
+        "document_type": "assessment",
+        "document_url": "https://internal.company.com/docs/PROV-2024-A7K2M9-security-report.pdf"
+      },
+      {
+        "document_name": "Capacity Planning Worksheet",
+        "document_type": "planning",
+        "document_url": "https://internal.company.com/docs/PROV-2024-A7K2M9-capacity-plan.xlsx"
+      },
+      {
+        "document_name": "Project Timeline and Milestones",
+        "document_type": "schedule",
+        "document_url": "https://internal.company.com/docs/PROV-2024-A7K2M9-timeline.pdf"
+      }
+    ]
+  },
+  "data_quality_label": "MOCK"
+}

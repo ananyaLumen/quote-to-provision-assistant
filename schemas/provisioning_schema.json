@@ -1,0 +1,475 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Network Provisioning Schema",
+  "description": "Defines the structure for network provisioning orders, including Bill of Materials (BOM), site allocation, and implementation details",
+  "type": "object",
+  "properties": {
+    "provisioning_id": {
+      "type": "string",
+      "pattern": "^PROV-[0-9]{4}-[A-Z0-9]{6}$",
+      "description": "Unique provisioning order identifier (PROV-YYYY-XXXXXX format)"
+    },
+    "provisioning_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date provisioning order was created (ISO 8601)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "submitted", "approved", "in_progress", "completed", "cancelled"],
+      "description": "Current provisioning status"
+    },
+    "customer_info": {
+      "type": "object",
+      "description": "Customer and project information",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Unique customer identifier"
+        },
+        "customer_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Customer organization name"
+        },
+        "customer_contact": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "primary_contact": {
+              "type": "string"
+            }
+          },
+          "required": ["email"]
+        },
+        "project_name": {
+          "type": "string",
+          "description": "Associated project or proposal name"
+        },
+        "project_id": {
+          "type": "string",
+          "description": "Reference to customer project identifier"
+        }
+      },
+      "required": ["customer_id", "customer_name", "customer_contact"]
+    },
+    "deployment_schedule": {
+      "type": "object",
+      "description": "Timeline and deployment milestones",
+      "properties": {
+        "planned_start_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Planned deployment start date"
+        },
+        "planned_completion_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Planned deployment completion date"
+        },
+        "deployment_phases": {
+          "type": "array",
+          "description": "Phased deployment stages",
+          "items": {
+            "type": "object",
+            "properties": {
+              "phase_number": { "type": "integer", "minimum": 1 },
+              "phase_name": { "type": "string" },
+              "description": { "type": "string" },
+              "start_date": { "type": "string", "format": "date" },
+              "end_date": { "type": "string", "format": "date" },
+              "affected_sites": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Site IDs included in this phase"
+              }
+            },
+            "required": ["phase_number", "phase_name", "start_date", "end_date"]
+          }
+        },
+        "maintenance_windows": {
+          "type": "array",
+          "description": "Scheduled maintenance windows during deployment",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": { "type": "string", "format": "date" },
+              "start_time": { "type": "string", "pattern": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$" },
+              "duration_minutes": { "type": "integer", "minimum": 15 },
+              "affected_services": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      },
+      "required": ["planned_start_date", "planned_completion_date"]
+    },
+    "bill_of_materials": {
+      "type": "array",
+      "description": "Products and services to be provisioned",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "line_item_id": {
+            "type": "string",
+            "pattern": "^BOM-[0-9]{4}$",
+            "description": "Unique line item identifier within this provisioning order"
+          },
+          "product_id": {
+            "type": "string",
+            "pattern": "^NP-[A-Z]+-[0-9]{3}$",
+            "description": "Reference to network product catalog"
+          },
+          "product_name": {
+            "type": "string",
+            "description": "Product name for reference"
+          },
+          "product_type": {
+            "type": "string",
+            "enum": [
+              "connectivity",
+              "security",
+              "load_balancing",
+              "wan_optimization",
+              "monitoring",
+              "management",
+              "services"
+            ]
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Number of units to provision"
+          },
+          "unit_of_measure": {
+            "type": "string",
+            "enum": ["units", "circuits", "ports", "licences", "hours", "sites"],
+            "description": "Measurement unit for quantity"
+          },
+          "site_allocation": {
+            "type": "array",
+            "description": "Sites where this product will be deployed",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "site_id": {
+                  "type": "string",
+                  "pattern": "^SITE-[0-9]{3}$",
+                  "description": "Reference to inventory site"
+                },
+                "site_name": {
+                  "type": "string",
+                  "description": "Site name for reference"
+                },
+                "quantity_at_site": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Quantity allocated to this specific site"
+                },
+                "deployment_role": {
+                  "type": "string",
+                  "enum": ["primary", "secondary", "backup", "distributed"],
+                  "description": "Functional role at this site"
+                },
+                "rack_location": {
+                  "type": "string",
+                  "description": "Specific rack and position (e.g., 'Rack-A-42')"
+                },
+                "port_assignment": {
+                  "type": "object",
+                  "description": "Network port or interface assignment",
+                  "properties": {
+                    "interface_type": { "type": "string" },
+                    "interface_id": { "type": "string" },
+                    "vlan_id": { "type": "integer", "minimum": 1, "maximum": 4094 }
+                  }
+                }
+              },
+              "required": ["site_id", "site_name", "quantity_at_site"]
+            }
+          },
+          "customization_config": {
+            "type": "object",
+            "description": "Product-specific customization parameters",
+            "additionalProperties": true
+          },
+          "pricing": {
+            "type": "object",
+            "description": "Cost breakdown for this line item",
+            "properties": {
+              "unit_setup_cost": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Setup cost per unit"
+              },
+              "unit_monthly_cost": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Monthly cost per unit"
+              },
+              "total_setup_cost": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Total setup cost (unit_setup_cost × quantity)"
+              },
+              "total_monthly_cost": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Total monthly cost (unit_monthly_cost × quantity)"
+              },
+              "discount_percent": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100,
+                "default": 0,
+                "description": "Applied discount percentage"
+              },
+              "currency": {
+                "type": "string",
+                "default": "USD",
+                "description": "Currency code"
+              }
+            },
+            "required": [
+              "unit_setup_cost",
+              "unit_monthly_cost",
+              "total_setup_cost",
+              "total_monthly_cost"
+            ]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional notes or special requirements for this line item"
+          }
+        },
+        "required": [
+          "line_item_id",
+          "product_id",
+          "product_name",
+          "quantity",
+          "unit_of_measure",
+          "site_allocation",
+          "pricing"
+        ]
+      }
+    },
+    "network_architecture": {
+      "type": "object",
+      "description": "High-level network architecture and topology design",
+      "properties": {
+        "architecture_type": {
+          "type": "string",
+          "enum": ["hub_spoke", "mesh", "ring", "hybrid"],
+          "description": "Overall network topology model"
+        },
+        "primary_site": {
+          "type": "string",
+          "pattern": "^SITE-[0-9]{3}$",
+          "description": "Primary aggregation or hub site"
+        },
+        "regions_covered": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["North America", "Europe", "Asia-Pacific"],
+          "description": "Geographic regions included in this network"
+        },
+        "total_sites": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of sites in this provisioning"
+        },
+        "total_bandwidth": {
+          "type": "object",
+          "description": "Aggregate network capacity",
+          "properties": {
+            "value": { "type": "number", "minimum": 0 },
+            "unit": { "type": "string", "enum": ["Mbps", "Gbps", "Tbps"] }
+          }
+        },
+        "redundancy_model": {
+          "type": "string",
+          "enum": ["none", "active_passive", "active_active", "n+1", "n+2"],
+          "description": "Redundancy approach for high availability"
+        },
+        "cloud_integration": {
+          "type": "object",
+          "description": "Cloud platform connectivity requirements",
+          "properties": {
+            "cloud_providers": {
+              "type": "array",
+              "items": { "type": "string" },
+              "examples": ["AWS", "Azure", "GCP"]
+            },
+            "direct_connect_required": { "type": "boolean" },
+            "hybrid_cloud": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "implementation_details": {
+      "type": "object",
+      "description": "Implementation approach and logistics",
+      "properties": {
+        "implementation_model": {
+          "type": "string",
+          "enum": ["waterfall", "agile", "phased", "big_bang"],
+          "description": "Project delivery methodology"
+        },
+        "implementation_partner": {
+          "type": "object",
+          "description": "Implementation and support partner information",
+          "properties": {
+            "partner_name": { "type": "string" },
+            "partner_id": { "type": "string" },
+            "primary_contact": { "type": "string" },
+            "contact_email": { "type": "string", "format": "email" }
+          }
+        },
+        "testing_requirements": {
+          "type": "object",
+          "properties": {
+            "pre_production_testing": { "type": "boolean" },
+            "load_testing_required": { "type": "boolean" },
+            "security_testing_required": { "type": "boolean" },
+            "failover_testing_required": { "type": "boolean" },
+            "user_acceptance_testing": { "type": "boolean" }
+          }
+        },
+        "training_requirements": {
+          "type": "object",
+          "properties": {
+            "operator_training_hours": { "type": "number", "minimum": 0 },
+            "admin_training_hours": { "type": "number", "minimum": 0 },
+            "escalation_training_hours": { "type": "number", "minimum": 0 },
+            "training_format": {
+              "type": "array",
+              "items": { "type": "string" },
+              "examples": ["on_site", "remote", "documentation"]
+            }
+          }
+        },
+        "documentation_deliverables": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": [
+            "Network design document",
+            "Configuration guide",
+            "Operational runbook",
+            "Disaster recovery plan",
+            "Security audit report"
+          ],
+          "description": "Required documentation to be delivered"
+        }
+      }
+    },
+    "cost_summary": {
+      "type": "object",
+      "description": "Financial summary across all line items",
+      "properties": {
+        "total_setup_cost": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Sum of all one-time setup costs"
+        },
+        "total_monthly_cost": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Sum of all recurring monthly costs"
+        },
+        "first_year_total": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Setup + (12 × monthly)"
+        },
+        "three_year_tco": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Setup + (36 × monthly)"
+        },
+        "discounts_applied": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Total discount amount"
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD"
+        }
+      },
+      "required": ["total_setup_cost", "total_monthly_cost", "first_year_total"]
+    },
+    "approval_workflow": {
+      "type": "object",
+      "description": "Approval chain and sign-offs",
+      "properties": {
+        "technical_approval": {
+          "type": "object",
+          "properties": {
+            "approver": { "type": "string" },
+            "approval_date": { "type": "string", "format": "date" },
+            "comments": { "type": "string" }
+          }
+        },
+        "financial_approval": {
+          "type": "object",
+          "properties": {
+            "approver": { "type": "string" },
+            "approval_date": { "type": "string", "format": "date" },
+            "budget_code": { "type": "string" }
+          }
+        },
+        "customer_acceptance": {
+          "type": "object",
+          "properties": {
+            "customer_signoff": { "type": "string" },
+            "signoff_date": { "type": "string", "format": "date" }
+          }
+        }
+      }
+    },
+    "attachments": {
+      "type": "object",
+      "description": "Associated documents and references",
+      "properties": {
+        "network_diagram_url": { "type": "string", "format": "uri" },
+        "proposal_id": { "type": "string" },
+        "quote_id": { "type": "string" },
+        "supporting_documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "document_name": { "type": "string" },
+              "document_type": { "type": "string" },
+              "document_url": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      }
+    },
+    "data_quality_label": {
+      "type": "string",
+      "enum": ["REAL", "MOCK", "SYNTHETIC"],
+      "description": "Data quality indicator"
+    }
+  },
+  "required": [
+    "provisioning_id",
+    "provisioning_date",
+    "status",
+    "customer_info",
+    "deployment_schedule",
+    "bill_of_materials",
+    "network_architecture",
+    "cost_summary",
+    "data_quality_label"
+  ],
+  "additionalProperties": false
+}

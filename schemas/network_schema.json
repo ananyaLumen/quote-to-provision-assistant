@@ -1,0 +1,368 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Network Product Definition Schema",
+  "description": "Defines attributes and required fields for network product recommendations in the Quote-to-Provision Assistant",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Schema metadata and version information",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "default": "1.0",
+          "description": "Version of this schema"
+        },
+        "schema_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date schema was defined (YYYY-MM-DD)"
+        }
+      },
+      "required": ["schema_version", "schema_date"]
+    },
+    "product_attributes": {
+      "type": "object",
+      "description": "Core network product attributes required for recommendations",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "pattern": "^NP-[A-Z]+-[0-9]{3}$",
+          "description": "Unique product identifier (NP-TYPE-NNN format)"
+        },
+        "product_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable product name"
+        },
+        "product_type": {
+          "type": "string",
+          "enum": [
+            "connectivity",
+            "security",
+            "load_balancing",
+            "wan_optimization",
+            "monitoring",
+            "management",
+            "services"
+          ],
+          "description": "Classification of network product category"
+        },
+        "product_category": {
+          "type": "string",
+          "enum": [
+            "transport",
+            "access",
+            "cloud_integration",
+            "threat_prevention",
+            "performance",
+            "orchestration",
+            "consulting"
+          ],
+          "description": "Functional category for solution architecture"
+        },
+        "product_tier": {
+          "type": "string",
+          "enum": ["enterprise", "mid-market", "smb", "edge"],
+          "description": "Target market segment"
+        }
+      },
+      "required": [
+        "product_id",
+        "product_name",
+        "product_type",
+        "product_category",
+        "product_tier"
+      ]
+    },
+    "technical_specifications": {
+      "type": "object",
+      "description": "Technical capabilities and performance characteristics",
+      "properties": {
+        "bandwidth": {
+          "type": "object",
+          "description": "Bandwidth capability specifications",
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Bandwidth capacity numeric value"
+            },
+            "unit": {
+              "type": "string",
+              "enum": ["Mbps", "Gbps", "Tbps"],
+              "description": "Bandwidth measurement unit"
+            },
+            "symmetry": {
+              "type": "string",
+              "enum": ["symmetric", "asymmetric", "burstable"],
+              "description": "Upload/download characteristics"
+            }
+          }
+        },
+        "latency_ms": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Typical end-to-end latency in milliseconds"
+        },
+        "throughput_tps": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Transactions or connections per second (product-dependent)"
+        },
+        "packet_loss": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Acceptable packet loss percentage"
+        },
+        "jitter_ms": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Maximum acceptable jitter in milliseconds"
+        },
+        "supported_protocols": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["BGP", "OSPF", "MPLS", "HTTP/2", "QUIC", "IPsec"],
+          "description": "Network protocols supported by this product"
+        },
+        "supported_standards": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["IEEE 802.3", "RFC 7539", "FIPS 140-2"],
+          "description": "Industry standards compliance"
+        }
+      }
+    },
+    "service_level_requirements": {
+      "type": "object",
+      "description": "SLA and support characteristics",
+      "properties": {
+        "uptime_percentage": {
+          "type": "number",
+          "minimum": 90,
+          "maximum": 99.999,
+          "description": "Guaranteed uptime SLA (e.g., 99.9)"
+        },
+        "response_time_ms": {
+          "type": "number",
+          "minimum": 1,
+          "description": "Maximum acceptable response time (milliseconds)"
+        },
+        "recovery_time_objective_min": {
+          "type": "number",
+          "description": "RTO in minutes"
+        },
+        "recovery_point_objective_min": {
+          "type": "number",
+          "description": "RPO in minutes"
+        },
+        "support_model": {
+          "type": "string",
+          "enum": ["24/7/365", "24/7", "business_hours", "on_demand"],
+          "description": "Support availability"
+        },
+        "support_response_sla_hours": {
+          "type": "number",
+          "description": "Hours to first response for critical issues"
+        },
+        "maintenance_window_hours": {
+          "type": "number",
+          "description": "Maximum maintenance window duration (hours)"
+        }
+      }
+    },
+    "pricing_model": {
+      "type": "object",
+      "description": "Cost and financial attributes",
+      "properties": {
+        "setup_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "One-time setup/implementation cost (USD)"
+        },
+        "monthly_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Recurring monthly cost (USD)"
+        },
+        "cost_per_unit": {
+          "type": "object",
+          "description": "Alternative pricing by usage metric",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": {
+              "type": "string",
+              "examples": ["per_gbps", "per_port", "per_transaction", "per_user"]
+            }
+          }
+        },
+        "contract_term_months": {
+          "type": "number",
+          "enum": [1, 12, 24, 36],
+          "description": "Minimum contract term (months)"
+        },
+        "discounts_available": {
+          "type": "boolean",
+          "description": "Whether volume or commitment discounts apply"
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD",
+          "description": "Currency code"
+        }
+      }
+    },
+    "deployment_logistics": {
+      "type": "object",
+      "description": "Lead time and implementation information",
+      "properties": {
+        "lead_time_days": {
+          "type": "number",
+          "minimum": 1,
+          "description": "Days from order to ready-to-deploy"
+        },
+        "implementation_days": {
+          "type": "number",
+          "description": "Typical implementation duration (days)"
+        },
+        "installation_complexity": {
+          "type": "string",
+          "enum": ["simple", "moderate", "complex"],
+          "description": "Installation difficulty level"
+        },
+        "equipment_weight_kg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Physical equipment weight (kg)"
+        },
+        "rack_units_required": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Physical space requirement (1U units)"
+        },
+        "power_consumption_watts": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Maximum power consumption (watts)"
+        },
+        "cooling_requirement_watts": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Heat dissipation requirement (watts)"
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "description": "Interoperability and ecosystem compatibility",
+      "properties": {
+        "compatible_platforms": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["AWS", "Azure", "GCP", "On-Premises"],
+          "description": "Cloud/infrastructure platforms supported"
+        },
+        "compatible_products": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Product IDs this product integrates with or requires"
+        },
+        "api_available": {
+          "type": "boolean",
+          "description": "Whether REST/GraphQL API is available"
+        },
+        "api_version": {
+          "type": "string",
+          "examples": ["v1", "v2", "v3"],
+          "description": "Available API version(s)"
+        },
+        "orchestration_support": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["Terraform", "Ansible", "CloudFormation", "ARM"],
+          "description": "Infrastructure-as-code tool support"
+        },
+        "licensing_model": {
+          "type": "string",
+          "enum": ["perpetual", "subscription", "pay-as-you-go", "free"],
+          "description": "Licensing approach"
+        }
+      }
+    },
+    "compliance_security": {
+      "type": "object",
+      "description": "Security posture and compliance certifications",
+      "properties": {
+        "certifications": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["ISO 27001", "SOC 2 Type II", "HIPAA", "PCI-DSS", "GDPR"],
+          "description": "Security and compliance certifications achieved"
+        },
+        "encryption_support": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["AES-256", "TLS 1.3", "ChaCha20"],
+          "description": "Encryption algorithms supported"
+        },
+        "data_residency_options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["US-East", "EU", "APAC", "GovCloud"],
+          "description": "Available geographic data residency options"
+        },
+        "audit_logging": {
+          "type": "boolean",
+          "description": "Whether detailed audit logging is available"
+        },
+        "threat_intelligence": {
+          "type": "boolean",
+          "description": "Whether threat intelligence feeds are included"
+        }
+      }
+    },
+    "feature_set": {
+      "type": "object",
+      "description": "Detailed capabilities and features",
+      "properties": {
+        "core_features": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Essential product capabilities"
+        },
+        "advanced_features": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional premium features"
+        },
+        "automation_capabilities": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["Auto-failover", "Self-healing", "Auto-scaling"],
+          "description": "Automated operations features"
+        },
+        "monitoring_telemetry": {
+          "type": "array",
+          "items": { "type": "string" },
+          "examples": ["NetFlow", "sFlow", "SNMP", "Prometheus", "CloudWatch"],
+          "description": "Available monitoring and telemetry options"
+        }
+      }
+    }
+  },
+  "required": [
+    "metadata",
+    "product_attributes",
+    "technical_specifications",
+    "service_level_requirements",
+    "pricing_model",
+    "deployment_logistics",
+    "compatibility",
+    "compliance_security",
+    "feature_set"
+  ],
+  "additionalProperties": false
+}
