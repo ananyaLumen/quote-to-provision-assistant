@@ -47,12 +47,43 @@ copy backend\.env.example backend\.env        # then fill in the values (incl. O
 2. Load the data: `python backend\load_data.py` (re-runnable; `--dry-run` transforms without writing, `--only evcs` for one table).
 3. Embed the text sources: `python -m backend.embed_all` (run from the repo root; incremental, so re-run whenever the data changes;
    `--dry-run` shows what would be embedded, `--only product_catalog` limits it to one source).
-4. Start the API from the repo root: `uvicorn backend.main:app --reload --port 8000`, then open http://localhost:8000/docs.
-5. Start the frontend: `cd frontend; npm install; npm run dev`, then open http://localhost:5173. It calls `POST /quote` on
-   `http://localhost:8000`; set `VITE_API_URL` in the frontend environment to use another backend. The backend needs the
-   corporate network/VPN because it calls the internal LLM gateway.
+Then start the backend and the frontend (see [Run the app](#run-the-app)).
 
 `python backend\etl.py --stats` reports row counts, column fill rates and payload sizes without touching the database.
+
+## Run the app
+
+Connect to the corporate network/VPN first: the backend calls the internal LLM gateway. Use two terminals.
+
+**Terminal 1: backend** (run from the repo root, not from `backend/`)
+
+```powershell
+cd "<path-to>\quote-to-provision-assistant"
+.\backend\venv\Scripts\python.exe -m uvicorn backend.main:app --reload --port 8000
+```
+
+API docs: http://localhost:8000/docs. Health check: http://localhost:8000/health.
+Start it with `python -m uvicorn` rather than the `uvicorn` command: on managed machines the `uvicorn.exe`
+launcher can be blocked by the Approved Products List, while `python.exe` is not.
+
+**Terminal 2: frontend**
+
+```powershell
+cd "<path-to>\quote-to-provision-assistant\frontend"
+npm install        # first time only
+npm run dev
+```
+
+Open http://localhost:5173. The UI calls `POST /quote` on `http://localhost:8000`; set `VITE_API_URL` to use another backend.
+A quote takes about 20-60 seconds because the backend makes several LLM calls.
+
+| Problem | Fix |
+|---|---|
+| `No module named 'backend'` | Run uvicorn from the repo root. |
+| `address already in use` (port 8000) | `Get-NetTCPConnection -LocalPort 8000 -State Listen \| ForEach-Object { Stop-Process -Id $_.OwningProcess }` |
+| UI says "Can't reach the API" | The backend isn't running, or you are off the VPN. |
+| `OPTIONS /quote ... 400` in the backend log | The UI is opened from an origin the API doesn't allow. The log names it; add it to `CORS_ORIGINS` (comma-separated) and restart. `localhost`, private IPs and this machine's hostname are allowed by default. |
+| `vite` blocked | `node node_modules\vite\bin\vite.js --host 0.0.0.0` |
 
 ## Quote pipeline
 
