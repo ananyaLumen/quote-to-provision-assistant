@@ -6,6 +6,27 @@ __pycache__/
 # C extensions
 *.so
 
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Environment / secrets
+.env
+*.env
+
+# Python backend
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
 # Distribution / packaging
 .Python
 build/
