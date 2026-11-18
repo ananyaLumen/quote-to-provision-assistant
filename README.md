@@ -47,7 +47,12 @@ copy backend\.env.example backend\.env        # then fill in the values (incl. O
 2. Load the data: `python backend\load_data.py` (re-runnable; `--dry-run` transforms without writing, `--only evcs` for one table).
 3. Embed the text sources: `python -m backend.embed_all` (run from the repo root; incremental, so re-run whenever the data changes;
    `--dry-run` shows what would be embedded, `--only product_catalog` limits it to one source).
-Then start the backend and the frontend (see [Run the app](#run-the-app)).
+4. Start the API from the repo root: `uvicorn backend.main:app --reload --port 8000`, then open http://localhost:8000/docs.
+5. Start the frontend: `cd frontend; npm install; npm run dev`, then open http://localhost:5173. It calls `POST /quote` on
+   `http://localhost:8000`; set `VITE_API_URL` in the frontend environment to use another backend. The backend needs the
+   corporate network/VPN because it calls the internal LLM gateway.
+
+See [Run the app](#run-the-app) below for the full commands, including the version that works when `uvicorn.exe` is blocked.
 
 `python backend\etl.py --stats` reports row counts, column fill rates and payload sizes without touching the database.
 
