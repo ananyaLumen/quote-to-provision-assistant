@@ -71,9 +71,10 @@ def requirement_text(req: dict) -> str:
 
 
 async def embed_texts(texts: list[str]) -> list[list[float]]:
-    response = await get_client().embeddings.create(
-        model=EMBEDDING_MODEL, input=texts, dimensions=EMBEDDING_DIMENSIONS
-    )
+    options = {}
+    if EMBEDDING_MODEL.startswith("text-embedding-3"):  # older models (ada-002) don't accept `dimensions`
+        options["dimensions"] = EMBEDDING_DIMENSIONS
+    response = await get_client().embeddings.create(model=EMBEDDING_MODEL, input=texts, **options)
     vectors = [item.embedding for item in sorted(response.data, key=lambda item: item.index)]
     if len(vectors) != len(texts) or any(len(v) != EMBEDDING_DIMENSIONS for v in vectors):
         raise RuntimeError(f"Embedding model returned unexpected shapes; expected {EMBEDDING_DIMENSIONS} dimensions")
