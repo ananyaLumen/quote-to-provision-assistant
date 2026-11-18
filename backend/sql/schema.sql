@@ -431,4 +431,66 @@ alter table provisioning_orders     enable row level security;
 alter table bom_items               enable row level security;
 alter table site_allocations        enable row level security;
 
+-- ---------------------------------------------------------------------------
+-- Read-only helpers for the validator agent. Plain (security invoker) functions, so RLS still applies:
+-- only the backend's secret key can get results out of them.
+-- ---------------------------------------------------------------------------
+
+-- Does Lumen already have network presence at each requested site? Whole-word, case-insensitive match
+-- on the service address, so 'India' does not match 'Indiana'.
+create or replace function site_presence(site_names text[])
+returns table (site text, locations bigint, uni_sites bigint, ports bigint)
+language sql stable
+set search_path = public
+as $$
+    select q.site,
+           (select count(*) from locations l where l.address ~* q.re or l.name ~* q.re),
+           (select count(*) from uni_sites u where u.service_address ~* q.re),
+           (select count(*) from whitelisted_ports w where w.service_address ~* q.re)
+    from (
+        select s as site,
+               '\m' || regexp_replace(s, '([.^$*+?()\[\]{}|\\])', '\\\1', 'g') || '\M' as re
+        from unnest(site_names) as s
+    ) q
+$$;
+
+-- Historical outcome of provisioning orders, per product family and operation (finished orders only).
+create or replace function provisioning_outcomes()
+returns table (product_family text, operation text, finished bigint, failures bigint, failure_rate_pct numeric)
+language sql stable
+set search_path = public
+as $$
+    select product_family, operation,
+           count(*) filter (where status in ('SUCCESS', 'FAILURE')),
+           count(*) filter (where status = 'FAILURE'),
+           round(100.0 * count(*) filter (where status = 'FAILURE')
+                 / nullif(count(*) filter (where status in ('SUCCESS', 'FAILURE')), 0), 1)
+    from provisioning_requests
+    where operation is not null
+    group by product_family, operation
+    order by product_family, operation
+$$;
+
+-- Most common failure reasons, with device names and the repeated boilerplate collapsed so equal causes group together.
+create or replace function common_failure_reasons(families text[], op text, top_n integer default 3)
+returns table (reason text, occurrences bigint, share_pct numeric)
+language sql stable
+set search_path = public
+as $$
+    with cleaned as (
+        select regexp_replace(
+                   regexp_replace(
+                       regexp_replace(message, '\\n', ' ', 'g'),
+                       '\m[a-z]+[0-9]+\.[a-z]+[0-9]+\M', '<device>', 'gi'),
+                   '(Deployment Failed ?)+', 'Deployment Failed: ', 'g') as r
+        from service_order_failures
+        where service_family = any (families) and operation = op and message is not null
+    )
+    select left(r, 140), count(*), round(100.0 * count(*) / (select count(*) from cleaned), 1)
+    from cleaned
+    group by 1
+    order by 2 desc
+    limit top_n
+$$;
+
 notify pgrst, 'reload schema';

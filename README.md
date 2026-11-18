@@ -59,7 +59,13 @@ copy backend\.env.example backend\.env        # then fill in the values (incl. O
 |---|---|---|
 | Requirement extraction | `agents/extractor.py` (OpenAI structured output, `schemas/requirement.py`) | implemented |
 | Similar-project retrieval | `agents/retriever.py` (OpenAI embeddings + pgvector `match_past_projects`) | implemented |
-| Validation, network, software, proposal | `agents/validator.py`, `network.py`, `software.py`, `proposal.py` | stubs |
+| Validation | `agents/validator.py` (catalog, locations, inventory presence and order history via SQL; no LLM) | implemented |
+| Network solution | `agents/network.py` (catalog + MCGW rate card; BOM, cost range, schema-valid draft provisioning JSON; no LLM) | implemented |
+| Software solution | `agents/software.py` (GPT-4o plan; effort and cost totals computed in code) | implemented |
+| Proposal | `agents/proposal.py` (deterministic assembly, roadmap and costs; LLM writes only the summary, guarded against invented figures) | implemented |
+
+Design rules shared by the validator and the network agent live in `backend/design.py`. Planning assumptions you may want to change:
+`DEFAULT_SLA_PCT` (design.py), the contingency percentages (network.py) and `SOFTWARE_DAY_RATE_USD` (env).
 
 The data endpoints (`/api/products`, `/api/locations`, `/api/projects`, ...) live in `backend/api/data_routes.py`.
 
