@@ -1,0 +1,370 @@
+[
+  {
+    "id": "PROJ-0001",
+    "name": "[REAL] Global Finance HQ Migration",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 100,
+      "secondary": 50.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 2500000,
+      "setup_cost": 750000.0,
+      "monthly_operational": 72916.66666666667,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0002",
+    "name": "[REAL] Healthcare Multi-Site Network",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 50,
+      "secondary": 25.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 1800000,
+      "setup_cost": 540000.0,
+      "monthly_operational": 52500.0,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0003",
+    "name": "[REAL] Manufacturing Supply Chain",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 75,
+      "secondary": 37.5,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 2200000,
+      "setup_cost": 660000.0,
+      "monthly_operational": 64166.666666666664,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0004",
+    "name": "[REAL] Retail POS Network Upgrade",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 25,
+      "secondary": 12.5,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 950000,
+      "setup_cost": 285000.0,
+      "monthly_operational": 27708.333333333332,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0005",
+    "name": "[REAL] Government Cloud Migration",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 150,
+      "secondary": 75.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 3500000,
+      "setup_cost": 1050000.0,
+      "monthly_operational": 102083.33333333333,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0006",
+    "name": "[REAL] Media & Broadcasting Network",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 200,
+      "secondary": 100.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 4000000,
+      "setup_cost": 1200000.0,
+      "monthly_operational": 116666.66666666667,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0007",
+    "name": "[REAL] University Federated Network",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 60,
+      "secondary": 30.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 1600000,
+      "setup_cost": 480000.0,
+      "monthly_operational": 46666.666666666664,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  },
+  {
+    "id": "PROJ-0008",
+    "name": "[REAL] Energy Sector Infrastructure",
+    "description": "Real project from Lumen portfolio",
+    "client": "[REAL] Enterprise Customer",
+    "location": "Multiple Sites",
+    "region": "Global",
+    "bandwidth_requirements": {
+      "primary": 120,
+      "secondary": 60.0,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "cloud_distribution": {
+      "aws": 50,
+      "azure": 30,
+      "gcp": 20
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 2800000,
+      "setup_cost": 840000.0,
+      "monthly_operational": 81666.66666666666,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Real deployment patterns observed",
+      "Actual lead times for procurement",
+      "Customer satisfaction metrics from live systems"
+    ],
+    "data_quality_label": "[REAL - From Lumen Portfolio]",
+    "created_date": "2026-11-18"
+  }
+]

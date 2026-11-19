@@ -1,0 +1,264 @@
+[
+  {
+    "id": "NP-CONN-001",
+    "name": "[MOCK] Enterprise Metro Ethernet 10G",
+    "type": "connectivity",
+    "description": "Dedicated metropolitan area connection for enterprise customers with 10 Gbps symmetric bandwidth and guaranteed latency under 5ms.",
+    "bandwidth": {
+      "value": 10,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 5,
+    "sla_uptime": 99.9,
+    "setup_cost": 15000,
+    "monthly_cost": 5500,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": ["Dedicated circuit", "Dedicated support", "Traffic prioritization"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-CONN-002",
+    "name": "[MOCK] Cloud Interconnect AWS 100G",
+    "type": "connectivity",
+    "description": "Direct connection service to AWS cloud infrastructure with 100 Gbps capacity and sub-2ms latency to AWS regions.",
+    "bandwidth": {
+      "value": 100,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 2,
+    "sla_uptime": 99.99,
+    "setup_cost": 45000,
+    "monthly_cost": 18000,
+    "lead_time_days": 60,
+    "currency": "USD",
+    "features": ["AWS Direct Connect", "BGP redundancy", "Private VLANs"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-CONN-003",
+    "name": "[MOCK] International MPLS VPN 50G",
+    "type": "connectivity",
+    "description": "Multiprotocol Label Switching VPN connecting international offices with traffic prioritization and QoS.",
+    "bandwidth": {
+      "value": 50,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 80,
+    "sla_uptime": 99.95,
+    "setup_cost": 32000,
+    "monthly_cost": 12500,
+    "lead_time_days": 45,
+    "currency": "USD",
+    "features": ["MPLS QoS", "Traffic engineering", "Site-to-site encryption"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-CONN-004",
+    "name": "[MOCK] Internet Gateway Burst 1G",
+    "type": "connectivity",
+    "description": "Cost-effective internet access with burstable bandwidth up to 1 Gbps for backup and overflow traffic.",
+    "bandwidth": {
+      "value": 1,
+      "unit": "Gbps",
+      "symmetry": "burstable"
+    },
+    "latency_ms": 25,
+    "sla_uptime": 99.5,
+    "setup_cost": 5000,
+    "monthly_cost": 800,
+    "lead_time_days": 15,
+    "currency": "USD",
+    "features": ["Best effort delivery", "Standard support", "Shared infrastructure"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-FW-001",
+    "name": "[MOCK] Enterprise Security Gateway 40G",
+    "type": "security",
+    "description": "Next-generation firewall appliance with threat prevention, IPS/IDS, and advanced malware protection for up to 40 Gbps throughput.",
+    "bandwidth": {
+      "value": 40,
+      "unit": "Gbps"
+    },
+    "throughput_tps": 50000,
+    "sla_uptime": 99.9,
+    "setup_cost": 25000,
+    "monthly_cost": 3500,
+    "lead_time_days": 21,
+    "currency": "USD",
+    "features": ["IPS/IDS", "Malware prevention", "URL filtering", "SSL inspection"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-FW-002",
+    "name": "[MOCK] Mid-Market Firewall 10G",
+    "type": "security",
+    "description": "Compact security appliance for mid-market deployments with integrated threat management.",
+    "bandwidth": {
+      "value": 10,
+      "unit": "Gbps"
+    },
+    "throughput_tps": 15000,
+    "sla_uptime": 99.9,
+    "setup_cost": 12000,
+    "monthly_cost": 1800,
+    "lead_time_days": 14,
+    "currency": "USD",
+    "features": ["IPS/IDS", "VPN termination", "High availability"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-LB-001",
+    "name": "[MOCK] Enterprise Load Balancer 100G",
+    "type": "load_balancing",
+    "description": "High-performance application load balancer supporting Layer 4-7 services with 100 Gbps capacity and sub-1ms latency.",
+    "bandwidth": {
+      "value": 100,
+      "unit": "Gbps"
+    },
+    "connections_per_sec": 1000000,
+    "sla_uptime": 99.99,
+    "setup_cost": 35000,
+    "monthly_cost": 8000,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": ["L4/L7 switching", "SSL termination", "Session persistence", "DDoS mitigation"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-LB-002",
+    "name": "[MOCK] Application Load Balancer 20G",
+    "type": "load_balancing",
+    "description": "Dedicated load balancing for cloud applications with auto-scaling support.",
+    "bandwidth": {
+      "value": 20,
+      "unit": "Gbps"
+    },
+    "connections_per_sec": 250000,
+    "sla_uptime": 99.95,
+    "setup_cost": 18000,
+    "monthly_cost": 3200,
+    "lead_time_days": 21,
+    "currency": "USD",
+    "features": ["HTTP/2 support", "WebSocket support", "Path-based routing"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-WAF-001",
+    "name": "[MOCK] Web Application Firewall 50G",
+    "type": "security",
+    "description": "Dedicated WAF protecting web applications from OWASP top 10 and advanced threats.",
+    "bandwidth": {
+      "value": 50,
+      "unit": "Gbps"
+    },
+    "requests_per_sec": 500000,
+    "sla_uptime": 99.9,
+    "setup_cost": 20000,
+    "monthly_cost": 4500,
+    "lead_time_days": 21,
+    "currency": "USD",
+    "features": ["Bot protection", "API protection", "Rate limiting", "Geographic filtering"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-DLP-001",
+    "name": "[MOCK] Data Loss Prevention Gateway",
+    "type": "security",
+    "description": "Comprehensive DLP solution monitoring and preventing unauthorized data exfiltration across network, email, and cloud.",
+    "bandwidth": {
+      "value": 20,
+      "unit": "Gbps"
+    },
+    "throughput_tps": 30000,
+    "sla_uptime": 99.9,
+    "setup_cost": 18000,
+    "monthly_cost": 2800,
+    "lead_time_days": 21,
+    "currency": "USD",
+    "features": ["Email inspection", "Cloud connector", "Endpoint integration", "Incident response"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-SD-WAN-001",
+    "name": "[MOCK] SD-WAN Platform 50 Sites",
+    "type": "wan_optimization",
+    "description": "Software-defined WAN platform for centralized traffic management and application-aware routing across 50 branch sites.",
+    "sites_supported": 50,
+    "bandwidth": {
+      "value": 50,
+      "unit": "Gbps"
+    },
+    "sla_uptime": 99.9,
+    "setup_cost": 40000,
+    "monthly_cost": 6000,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": ["App-aware routing", "Centralized management", "Link bonding", "Traffic engineering"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-WAN-OPT-001",
+    "name": "[MOCK] WAN Optimization Appliance",
+    "type": "wan_optimization",
+    "description": "Reduces WAN bandwidth consumption through compression, deduplication, and caching technologies.",
+    "bandwidth": {
+      "value": 10,
+      "unit": "Gbps"
+    },
+    "compression_ratio": "5:1",
+    "sla_uptime": 99.9,
+    "setup_cost": 12000,
+    "monthly_cost": 1500,
+    "lead_time_days": 21,
+    "currency": "USD",
+    "features": ["LZ77 compression", "Dictionary compression", "Video streaming optimization"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-DXP-001",
+    "name": "[MOCK] Digital Experience Platform",
+    "type": "monitoring",
+    "description": "Real-time monitoring and analytics of digital user experience across all applications and networks.",
+    "users_monitored": 100000,
+    "sla_uptime": 99.95,
+    "setup_cost": 15000,
+    "monthly_cost": 3000,
+    "lead_time_days": 15,
+    "currency": "USD",
+    "features": ["User experience metrics", "Network path analysis", "Application analytics", "Synthetic monitoring"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-IPAM-001",
+    "name": "[MOCK] IP Address Management Platform",
+    "type": "management",
+    "description": "Centralized IPAM platform supporting 1 million IP addresses with DNS and DHCP integration.",
+    "ip_addresses_supported": 1000000,
+    "sla_uptime": 99.99,
+    "setup_cost": 8000,
+    "monthly_cost": 1200,
+    "lead_time_days": 15,
+    "currency": "USD",
+    "features": ["DNS integration", "DHCP management", "IPv6 support", "API-based provisioning"],
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "NP-CONSUL-001",
+    "name": "[MOCK] Professional Services - Network Design",
+    "type": "services",
+    "description": "Expert network design consulting for enterprise-scale deployments (60 hours included).",
+    "hours_included": 60,
+    "sla_uptime": null,
+    "setup_cost": 25000,
+    "monthly_cost": 0,
+    "lead_time_days": 7,
+    "currency": "USD",
+    "features": ["Architecture design", "Security assessment", "Capacity planning", "Implementation planning"],
+    "data_quality_label": "MOCK"
+  }
+]

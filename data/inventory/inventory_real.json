@@ -1,0 +1,3368 @@
+[
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ge-kxfn-176546-lvlc",
+    "location": "L\u00c3\u201eRCHENSTR 110 65933 FRANKFURT HESSEN GERMANY",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 50.097968,
+      "longitude": 8.587903
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] hi-kxfn-049413-lvlc",
+    "location": "3375 KOAPAKA ST HONOLULU HAWAII 96819 1800 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 21.334524,
+      "longitude": -157.917434
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] in-kxfn-182983-lvlc",
+    "location": "11100 USA PKWY FISHERS INDIANA 46037 9203 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.94806,
+      "longitude": -86.010311
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] in-kxfn-185998-lvlc",
+    "location": "701 CONGRESSIONAL BLVD CARMEL INDIANA 46032 5635 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.962583,
+      "longitude": -86.146141
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] nl-kxfn-177580-lvlc",
+    "location": "LUTTENBERGWEG 4 1101 EC AMSTERDAM NOORD-HOLLAND NETHERLANDS",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 52.299985,
+      "longitude": 4.943408
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] nj-kxfn-223441-lvlc",
+    "location": "800 SECAUCUS RD SECAUCUS NEW JERSEY 07094 2422 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.77815,
+      "longitude": -74.072401
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-224636-lvlc",
+    "location": "25 FED EX PKWY COLLIERVILLE TENNESSEE 38017 8767 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 35.039538,
+      "longitude": -89.721549
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] nj-kxfn-196139-lvlc",
+    "location": "365 S RANDOLPHVILLE RD PISCATAWAY NEW JERSEY 08854 4132 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.552865,
+      "longitude": -74.459353
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ks-kxfn-197731-lvlc",
+    "location": "3801 S OLIVER ST WICHITA KANSAS 67210 2112 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.622151,
+      "longitude": -97.281121
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-224657-lvlc",
+    "location": "25 FED EX PKWY COLLIERVILLE TENNESSEE 38017 8767 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 35.039538,
+      "longitude": -89.721549
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mn-kxfn-216145-lvlc",
+    "location": "5480 FELTL RD MINNETONKA MINNESOTA 55343 7982 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 44.903465,
+      "longitude": -93.421214
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-224655-lvlc",
+    "location": "25 FED EX PKWY COLLIERVILLE TENNESSEE 38017 8767 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 35.039538,
+      "longitude": -89.721549
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] nj-kxfn-223442-lvlc",
+    "location": "3 CORPORATE PL PISCATAWAY NEW JERSEY 08854 4119 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.554091,
+      "longitude": -74.457084
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-137723-lvlc",
+    "location": "1950 N STEMMONS FWY DALLAS TEXAS 75207 3134 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 32.801192,
+      "longitude": -96.819592
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-198932-lvlc",
+    "location": "801 INDUSTRIAL BLVD GALLATIN TENNESSEE 37066 3742 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.372807,
+      "longitude": -86.412159
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-093293-lvlc",
+    "location": "4650 OLD IRONSIDES DR SANTA CLARA CALIFORNIA 95054 1805 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.397442,
+      "longitude": -121.981306
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] or-kxfn-137722-lvlc",
+    "location": "851 SW 6TH AVE PORTLAND OREGON 97204 1337 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 45.518292,
+      "longitude": -122.679414
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] hi-kxfn-178990-lvlc",
+    "location": "3375 KOAPAKA ST HONOLULU HAWAII 96819 1800 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 21.334524,
+      "longitude": -157.917434
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] fl-kxfn-191188-lvlc",
+    "location": "12724 GRAN BAY PKWY W JACKSONVILLE FLORIDA 32258 9485 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 30.139551,
+      "longitude": -81.531914
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-218424-lvlc",
+    "location": "13500 RIVERPORT DR MARYLAND HEIGHTS MISSOURI 63043 4824 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.748537,
+      "longitude": -90.464796
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ar-kxfn-229540-lvlc",
+    "location": "15707 CHENAL PKWY LITTLE ROCK ARKANSAS 72211 2035 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 34.75624,
+      "longitude": -92.443941
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ga-kxfn-255628-lvlc",
+    "location": "300 SATELLITE BLVD NW SUWANEE GEORGIA 30024 7123 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 34.035228,
+      "longitude": -84.061268
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] il-kxfn-254230-lvlc",
+    "location": "2425 BUSSE RD ELK GROVE VILLAGE ILLINOIS 60007 5737 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.992139,
+      "longitude": -87.958139
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-258723-lvlc",
+    "location": "5700 INNOVATION DR DUBLIN OHIO 43016 3313 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.091841,
+      "longitude": -83.143674
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-258722-lvlc",
+    "location": "15248 NEO PKWY CLEVELAND OHIO 44128 3153 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.429385,
+      "longitude": -81.573926
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-250411-lvlc",
+    "location": "7000 SOUDER RD NEW ALBANY OHIO 43054 1120 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.104602,
+      "longitude": -82.805017
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-224857-lvlc",
+    "location": "25 FED EX PKWY COLLIERVILLE TENNESSEE 38017 8767 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 35.039538,
+      "longitude": -89.721549
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] va-kxfn-309840-lvlc",
+    "location": "44633 GUILFORD DR ASHBURN VIRGINIA 20147 6048 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.0221,
+      "longitude": -77.457757
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] nj-kxfn-031978-lvlc",
+    "location": "300 BOULEVARD E WEEHAWKEN NEW JERSEY 07086 6702 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.761912,
+      "longitude": -74.024953
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ne-kxfn-307222-lvlc",
+    "location": "1514 CHANDLER RD W BELLEVUE NEBRASKA 68147 1634 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.185539,
+      "longitude": -95.936081
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ut-kxfn-301016-lvlc",
+    "location": "683 S 4150 W SALT LAKE CITY UTAH 84104 4409 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.755143,
+      "longitude": -111.989926
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] co-kxfn-314267-lvlc",
+    "location": "8636 S PEORIA ST ENGLEWOOD COLORADO 80112 4480 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.558817,
+      "longitude": -104.838856
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-249181-lvlc",
+    "location": "1215 21ST AVE S NASHVILLE TENNESSEE UNITED STATES 37232 0015",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.141264,
+      "longitude": -86.800891
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mn-kxfn-264250-lvlc",
+    "location": "1550 UTICA AVE S ST LOUIS PARK MINNESOTA 55416 5312 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 44.96695,
+      "longitude": -93.346091
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-263359-lvlc",
+    "location": "3366 S TECH BLVD MIAMISBURG OHIO 45342 0823 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.591045,
+      "longitude": -84.236468
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] pa-kxfn-295457-lvlc",
+    "location": "2500 ELMERTON AVE HARRISBURG PENNSYLVANIA 17177 9764 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.29957,
+      "longitude": -76.850729
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-306052-lvlc",
+    "location": "114 W 11TH ST KANSAS CITY MISSOURI 64105 1952 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.10112,
+      "longitude": -94.585171
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] va-kxfn-228495-lvlc",
+    "location": "21715 FILIGREE CT ASHBURN VIRGINIA 20147 6205 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mn-kxfn-258592-lvlc",
+    "location": "5480 FELTL RD MINNETONKA MINNESOTA 55343 7982 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] pa-kxfn-335671-lvlc",
+    "location": "8004 BRETZ DR HARRISBURG PENNSYLVANIA 17112 9748 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.33723,
+      "longitude": -76.707231
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] az-kxfn-308272-lvlc",
+    "location": "7499 E PARADISE LN SCOTTSDALE ARIZONA 85260 1690 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.632534,
+      "longitude": -111.918569
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-134658-lvlc",
+    "location": "1405 S BELT LINE RD COPPELL TEXAS 75019 4934 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 32.934375,
+      "longitude": -96.994574
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] co-kxfn-333002-lvlc",
+    "location": "311 S ROCKRIMMON BLVD COLORADO SPRINGS COLORADO 80919 2303 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.917925,
+      "longitude": -104.847799
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-249180-lvlc",
+    "location": "2200 CHILDRENS WAY NASHVILLE TENNESSEE 37232 0005 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.146205,
+      "longitude": -86.806269
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ks-kxfn-203829-lvlc",
+    "location": "245 N WACO ST WICHITA KANSAS 67202 1121 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.68933,
+      "longitude": -97.343231
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-247346-lvlc",
+    "location": "4160 INTERNATIONAL PLZ FORT WORTH TEXAS 76109 4805 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 32.687415,
+      "longitude": -97.401595
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mn-kxfn-293294-lvlc",
+    "location": "5480 FELTL RD MINNETONKA MINNESOTA 55343 7982 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 44.903465,
+      "longitude": -93.421214
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] va-kxfn-228474-lvlc",
+    "location": "7818 E PARHAM RD HENRICO VIRGINIA 23294 4302 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.631538,
+      "longitude": -77.533344
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-309827-lvlc",
+    "location": "62 WELDON PKWY MARYLAND HEIGHTS MISSOURI 63043 3202 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.708217,
+      "longitude": -90.441113
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-247345-lvlc",
+    "location": "5900 CROSSINGS BLVD ANTIOCH TENNESSEE 37013 3165 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.03267,
+      "longitude": -86.63778
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] al-kxfn-134655-lvlc",
+    "location": "2461 1ST AVE S IRONDALE ALABAMA 35210 1531 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.543108,
+      "longitude": -86.697211
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] va-kxfn-228475-lvlc",
+    "location": "21715 FILIGREE CT ASHBURN VIRGINIA 20147 6205 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] co-kxfn-403934-lvlc",
+    "location": "9180 COMMERCE CENTER CIR HIGHLANDS RANCH COLORADO 80129 1511 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] wi-kxfn-311876-lvlc",
+    "location": "270 E KILBOURN AVE MILWAUKEE WISCONSIN 53202 3199 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 43.042932,
+      "longitude": -87.909286
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-404808-lvlc",
+    "location": "1055 BROADWAY ST KANSAS CITY MISSOURI 64105 1575 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.101416,
+      "longitude": -94.587963
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-404809-lvlc",
+    "location": "9050 NE UNDERGROUND DR KANSAS CITY MISSOURI 64161 9750 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.15912,
+      "longitude": -94.471351
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] or-kxfn-408628-lvlc",
+    "location": "6327 NE EVERGREEN PKWY HILLSBORO OREGON 97124 6014 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 45.551677,
+      "longitude": -122.915315
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-421566-lvlc",
+    "location": "11 GREAT OAKS BLVD SAN JOSE CALIFORNIA 95119 1242 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.241594,
+      "longitude": -121.783345
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] gb-kxfn-436558-lvlc",
+    "location": "2 BUCKINGHAM AVE SLOUGH BUCKINGHAMSHIRE SL1 4NB UNITED KINGDOM",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 51.523496,
+      "longitude": -0.636071
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-427152-lvlc",
+    "location": "11 GREAT OAKS BLVD SAN JOSE CALIFORNIA 95119 1242 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.24146,
+      "longitude": -121.782821
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-427332-lvlc",
+    "location": "9 GREAT OAKS BLVD SAN JOSE CALIFORNIA 95138 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 37.241861,
+      "longitude": -121.781597
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-316355-lvlc",
+    "location": "3101 GOLD CAMP DR RANCHO CORDOVA CALIFORNIA 95670 6099 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.590623,
+      "longitude": -121.272723
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-331303-lvlc",
+    "location": "6850 COMMERCE COURT DR BLACKLICK OHIO 43004 9297 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] co-kxfn-427330-lvlc",
+    "location": "311 S ROCKRIMMON BLVD COLORADO SPRINGS COLORADO 80919 2303 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.918203,
+      "longitude": -104.847635
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ok-kxfn-453994-lvlc",
+    "location": "7400 N LAKEWOOD AVE TULSA OKLAHOMA 74117 1308 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.262635,
+      "longitude": -95.910083
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] co-kxfn-463782-lvlc",
+    "location": "311 S ROCKRIMMON BLVD COLORADO SPRINGS COLORADO 80919 2303 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.917925,
+      "longitude": -104.847799
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-306051-lvlc",
+    "location": "6301 WINCHESTER AVE KANSAS CITY MISSOURI 64133 4682 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.011481,
+      "longitude": -94.502997
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-471831-lvlc",
+    "location": "201 W 5TH ST AUSTIN TEXAS 78701 2983 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 30.267341,
+      "longitude": -97.745193
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] wa-kxfn-468909-lvlc",
+    "location": "3355 S 120TH PL TUKWILA WASHINGTON 98168 5138 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 47.49186,
+      "longitude": -122.289811
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] wa-kxfn-408933-lvlc",
+    "location": "18101 SE 6TH WAY VANCOUVER WASHINGTON 98683 7509 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 45.616257,
+      "longitude": -122.485253
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] az-kxfn-408934-lvlc",
+    "location": "1301 W UNIVERSITY DR MESA ARIZONA 85201 5419 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.421248,
+      "longitude": -111.858957
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] hi-kxfn-451277-lvlc",
+    "location": "2339 KAMEHAMEHA HWY HONOLULU HAWAII UNITED STATES 96819",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 21.33194,
+      "longitude": -157.888111
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-512278-lvlc",
+    "location": "624 S GRAND AVE LOS ANGELES CALIFORNIA 90017 3335 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 34.04789,
+      "longitude": -118.255411
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-503908-lvlc",
+    "location": "229 W 7TH ST CINCINNATI OHIO 45202 2308 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.102686,
+      "longitude": -84.517856
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ny-kxfn-512828-lvlc",
+    "location": "299 LONG MEADOW RD STERLING FOREST NEW YORK 10987 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.167044,
+      "longitude": -74.259067
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] la-kxfn-403955-lvlc",
+    "location": "7127 FLORIDA BLVD BATON ROUGE LOUISIANA 70806 4549 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 30.453174,
+      "longitude": -91.115869
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-516590-lvlc",
+    "location": "535 SCHERERS CT COLUMBUS OHIO 43085 5710 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.11601,
+      "longitude": -83.002591
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] il-kxfn-516602-lvlc",
+    "location": "350 E CERMAK RD CHICAGO ILLINOIS 60616 5507 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.853528,
+      "longitude": -87.618389
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ne-kxfn-516601-lvlc",
+    "location": "5900 O ST LINCOLN NEBRASKA 68510 2234 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.813595,
+      "longitude": -96.638976
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-516600-lvlc",
+    "location": "1880 WAYCROSS RD CINCINNATI OHIO 45240 2825 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.285459,
+      "longitude": -84.547724
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-493645-lvlc",
+    "location": "100 N STANTON ST EL PASO TEXAS 79901 1463 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 31.759182,
+      "longitude": -106.485426
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mo-kxfn-484597-lvlc",
+    "location": "1391 TIMBERLAKE MANOR PKWY CHESTERFIELD MISSOURI 63017 6058 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.648646,
+      "longitude": -90.530874
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] fl-kxfn-500982-lvlc",
+    "location": "9310 FLORIDA PALM DR TAMPA FLORIDA 33619 4354 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 27.94558,
+      "longitude": -82.350651
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ky-kxfn-521912-lvlc",
+    "location": "4630 TAYLORSVILLE RD LOUISVILLE KENTUCKY 40220 3530 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 38.21668,
+      "longitude": -85.594521
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-503910-lvlc",
+    "location": "100 MISSION RDG GOODLETTSVILLE TENNESSEE 37072 2171 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.309274,
+      "longitude": -86.698623
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] wi-kxfn-518062-lvlc",
+    "location": "4321 N BALLARD RD APPLETON WISCONSIN 54919 0001 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 44.30282,
+      "longitude": -88.384721
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] az-kxfn-500624-lvlc",
+    "location": "811 S 16TH ST PHOENIX ARIZONA 85034 4129 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.439644,
+      "longitude": -112.046868
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] oh-kxfn-523022-lvlc",
+    "location": "1255 EUCLID AVE CLEVELAND OHIO 44115 1810 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 41.50087,
+      "longitude": -81.683511
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] az-kxfn-428284-lvlc",
+    "location": "615 N 48TH ST PHOENIX ARIZONA 85008 6608 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.454701,
+      "longitude": -111.976231
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ca-kxfn-529842-lvlc",
+    "location": "5836 CORPORATE AVE CYPRESS CALIFORNIA 90630 4742 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 33.807834,
+      "longitude": -118.030356
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-493662-lvlc",
+    "location": "7751 CF JORDAN DR EL PASO TEXAS 79912 8803 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 31.90509,
+      "longitude": -106.575221
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] ok-kxfn-477881-lvlc",
+    "location": "322 E ARCHER ST TULSA OKLAHOMA 74120 1404 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 36.158607,
+      "longitude": -95.989275
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-482793-lvlc",
+    "location": "14901 FAA BLVD FORT WORTH TEXAS 76155 2220 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 32.83177,
+      "longitude": -97.040181
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tn-kxfn-482767-lvlc",
+    "location": "123 S FRONT ST MEMPHIS TENNESSEE 38103 3607 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 35.142048,
+      "longitude": -90.056056
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] au-kxfn-534241-lvlc",
+    "location": "639 GARDENERS RD MASCOT NEW SOUTH WALES 2020 AUSTRALIA",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": -33.92139,
+      "longitude": 151.18821
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] mn-kxfn-518057-lvlc",
+    "location": "3255 NEIL ARMSTRONG BLVD EAGAN MINNESOTA 55121 2279 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 44.838504,
+      "longitude": -93.145815
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] pa-kxfn-512827-lvlc",
+    "location": "8004 BRETZ DR HARRISBURG PENNSYLVANIA 17112 9748 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 40.33723,
+      "longitude": -76.707231
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] va-kxfn-551643-lvlc",
+    "location": "21701 FILIGREE CT ASHBURN VIRGINIA 20147 6204 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 39.015908,
+      "longitude": -77.461173
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  },
+  {
+    "id": "62bb08acf7bba538fa99",
+    "name": "[REAL] tx-kxfn-570874-lvlc",
+    "location": "8235 DOUGLAS AVE DALLAS TEXAS 75225 6015 UNITED STATES",
+    "region": "Global",
+    "data_center_tier": "Tier 3+",
+    "coordinates": {
+      "latitude": 32.86295,
+      "longitude": -96.809051
+    },
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 150,
+      "power_capacity_kw": 800,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 400
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2026-11-18",
+    "data_quality_label": "[REAL - From Location_Site.xlsx]"
+  }
+]

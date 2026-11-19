@@ -1,0 +1,327 @@
+[
+  {
+    "id": "PROJ-2024-001",
+    "name": "[SYNTHETIC] Global Finance HQ Network Migration",
+    "description": "Complete network overhaul for a multinational financial services company. Migrated from legacy on-premises infrastructure to hybrid cloud architecture with guaranteed 99.95% uptime.",
+    "client": "[MOCK] FinServe Global Inc.",
+    "location": "New York, USA",
+    "region": "North America",
+    "bandwidth_requirements": {
+      "primary": 100,
+      "secondary": 50,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS", "Azure"],
+    "cloud_distribution": {
+      "aws": 60,
+      "azure": 40
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 50,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-15",
+      "completion_date": "2024-06-30",
+      "duration_months": 6
+    },
+    "costs": {
+      "total_project_cost": 2500000,
+      "setup_cost": 800000,
+      "monthly_operational": 185000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Phased migration approach reduced downtime from 48 hours to 4 hours",
+      "Pre-staging environment validation prevented production issues",
+      "Cross-cloud orchestration requires 3-month lead time for procurement"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-07-01"
+  },
+  {
+    "id": "PROJ-2024-002",
+    "name": "[SYNTHETIC] Healthcare System Multi-Site Connectivity",
+    "description": "Connected 15 hospital locations with HIPAA-compliant secure network infrastructure. Implemented redundant pathways and disaster recovery capabilities.",
+    "client": "[MOCK] HealthCare United Networks",
+    "location": "Texas, USA",
+    "region": "North America",
+    "bandwidth_requirements": {
+      "primary": 40,
+      "secondary": 20,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS"],
+    "cloud_distribution": {
+      "aws": 100
+    },
+    "sla": {
+      "uptime_percentage": 99.99,
+      "response_time_ms": 30,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-02-01",
+      "completion_date": "2024-08-15",
+      "duration_months": 7
+    },
+    "costs": {
+      "total_project_cost": 1800000,
+      "setup_cost": 600000,
+      "monthly_operational": 95000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "HIPAA compliance requires 2 months of pre-audit planning",
+      "Edge caching at hospital sites reduced latency by 35%",
+      "Disaster recovery testing quarterly identified 3 critical gaps"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-08-16"
+  },
+  {
+    "id": "PROJ-2024-003",
+    "name": "[SYNTHETIC] Media & Entertainment CDN Expansion",
+    "description": "Deployed content delivery network across APAC region to support 4K video streaming. Achieved 95ms average latency across 12 countries.",
+    "client": "[MOCK] StreamGlobal Media Ltd.",
+    "location": "Singapore, Singapore",
+    "region": "Asia-Pacific",
+    "bandwidth_requirements": {
+      "primary": 200,
+      "secondary": 100,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS", "GCP"],
+    "cloud_distribution": {
+      "aws": 55,
+      "gcp": 45
+    },
+    "sla": {
+      "uptime_percentage": 99.9,
+      "response_time_ms": 95,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-03-01",
+      "completion_date": "2024-10-30",
+      "duration_months": 8
+    },
+    "costs": {
+      "total_project_cost": 3200000,
+      "setup_cost": 1100000,
+      "monthly_operational": 145000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Regional data residency requirements varied significantly across countries",
+      "Video codec optimization reduced bandwidth needs by 28%",
+      "Real-time monitoring dashboards essential for 24/7 operations"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-10-31"
+  },
+  {
+    "id": "PROJ-2024-004",
+    "name": "[SYNTHETIC] Manufacturing Supply Chain Network",
+    "description": "Connected 23 manufacturing facilities with real-time IoT sensor data streaming. Integrated ERP systems with sub-50ms latency for inventory synchronization.",
+    "client": "[MOCK] ProManufacture Industries",
+    "location": "Germany, Germany",
+    "region": "Europe",
+    "bandwidth_requirements": {
+      "primary": 60,
+      "secondary": 30,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["Azure"],
+    "cloud_distribution": {
+      "azure": 100
+    },
+    "sla": {
+      "uptime_percentage": 99.95,
+      "response_time_ms": 45,
+      "support_level": "24/7"
+    },
+    "timeline": {
+      "start_date": "2024-01-10",
+      "completion_date": "2024-07-20",
+      "duration_months": 7
+    },
+    "costs": {
+      "total_project_cost": 2100000,
+      "setup_cost": 700000,
+      "monthly_operational": 125000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "IoT sensor integration required custom firmware updates on 2000+ devices",
+      "GDPR compliance added 15% to project timeline",
+      "Automated failover testing improved reliability by 23%"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-07-21"
+  },
+  {
+    "id": "PROJ-2024-005",
+    "name": "[SYNTHETIC] Retail POS and Cloud Integration",
+    "description": "Upgraded retail network for 450 stores with cloud-based POS system integration and real-time inventory visibility across all channels.",
+    "client": "[MOCK] RetailMax Corporation",
+    "location": "California, USA",
+    "region": "North America",
+    "bandwidth_requirements": {
+      "primary": 75,
+      "secondary": 35,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS"],
+    "cloud_distribution": {
+      "aws": 100
+    },
+    "sla": {
+      "uptime_percentage": 99.99,
+      "response_time_ms": 20,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-04-01",
+      "completion_date": "2024-11-15",
+      "duration_months": 8
+    },
+    "costs": {
+      "total_project_cost": 1950000,
+      "setup_cost": 650000,
+      "monthly_operational": 110000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Phased rollout by region reduced training burden and support load",
+      "Local edge caching at store locations improved transaction throughput by 40%",
+      "Mobile workforce data consumption grew 150% faster than projected"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-11-16"
+  },
+  {
+    "id": "PROJ-2024-006",
+    "name": "[SYNTHETIC] Government Data Center Consolidation",
+    "description": "Consolidated 8 federal agency data centers into 2 secure, compliant facilities. Achieved 35% operational cost reduction while maintaining security certifications.",
+    "client": "[MOCK] Federal IT Services Agency",
+    "location": "Washington D.C., USA",
+    "region": "North America",
+    "bandwidth_requirements": {
+      "primary": 150,
+      "secondary": 75,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS GovCloud"],
+    "cloud_distribution": {
+      "aws_govcloud": 100
+    },
+    "sla": {
+      "uptime_percentage": 99.99,
+      "response_time_ms": 60,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-02-15",
+      "completion_date": "2024-09-30",
+      "duration_months": 8
+    },
+    "costs": {
+      "total_project_cost": 2800000,
+      "setup_cost": 950000,
+      "monthly_operational": 155000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Security compliance audits must be scheduled 4 months in advance",
+      "Federal procurement timelines add 6+ months to hardware delivery",
+      "Legacy system decomissioning requires 90-day post-cutover support"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-10-01"
+  },
+  {
+    "id": "PROJ-2024-007",
+    "name": "[SYNTHETIC] University Campus Network Modernization",
+    "description": "Modernized network infrastructure for 5-campus university serving 45,000 students. Deployed unified wireless, security, and identity management across all locations.",
+    "client": "[MOCK] Premier State University",
+    "location": "Ohio, USA",
+    "region": "North America",
+    "bandwidth_requirements": {
+      "primary": 85,
+      "secondary": 40,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["Microsoft 365", "Azure"],
+    "cloud_distribution": {
+      "azure": 70,
+      "microsoft_365": 30
+    },
+    "sla": {
+      "uptime_percentage": 99.9,
+      "response_time_ms": 100,
+      "support_level": "24/7"
+    },
+    "timeline": {
+      "start_date": "2024-05-01",
+      "completion_date": "2024-12-15",
+      "duration_months": 8
+    },
+    "costs": {
+      "total_project_cost": 1650000,
+      "setup_cost": 550000,
+      "monthly_operational": 78000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Student infrastructure demands peaked during registration periods by 300%",
+      "Mobile device growth exceeded projections by 2x in first year",
+      "Unified authentication reduced help desk tickets by 60%"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-12-16"
+  },
+  {
+    "id": "PROJ-2024-008",
+    "name": "[SYNTHETIC] FinTech Multi-Region Active-Active Setup",
+    "description": "Built active-active payment processing network across 3 continents with sub-100ms transaction latency. Processed 1M+ transactions daily with 99.999% uptime.",
+    "client": "[MOCK] PaymentTech Solutions",
+    "location": "London, United Kingdom",
+    "region": "Europe",
+    "bandwidth_requirements": {
+      "primary": 180,
+      "secondary": 90,
+      "unit": "Gbps"
+    },
+    "cloud_platforms": ["AWS", "Azure", "GCP"],
+    "cloud_distribution": {
+      "aws": 40,
+      "azure": 35,
+      "gcp": 25
+    },
+    "sla": {
+      "uptime_percentage": 99.999,
+      "response_time_ms": 85,
+      "support_level": "24/7/365"
+    },
+    "timeline": {
+      "start_date": "2024-01-01",
+      "completion_date": "2024-10-15",
+      "duration_months": 10
+    },
+    "costs": {
+      "total_project_cost": 4200000,
+      "setup_cost": 1400000,
+      "monthly_operational": 185000,
+      "currency": "USD"
+    },
+    "lessons_learned": [
+      "Multi-cloud orchestration required 6 months of R&D before implementation",
+      "PCI-DSS compliance across 3 regions created 18-month audit cycle",
+      "Real-time replication overhead reduced effective throughput by 12%"
+    ],
+    "data_quality_label": "SYNTHETIC",
+    "created_date": "2024-10-16"
+  }
+]

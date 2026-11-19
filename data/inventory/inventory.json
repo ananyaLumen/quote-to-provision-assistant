@@ -1,0 +1,309 @@
+[
+  {
+    "id": "SITE-001",
+    "name": "[MOCK] New York Data Center - Primary",
+    "location": "New York, USA",
+    "region": "North America",
+    "data_center_tier": "Tier 4",
+    "capacity": {
+      "rack_units": 420,
+      "available_rack_units": 180,
+      "power_capacity_kw": 1200,
+      "available_power_kw": 450,
+      "cooling_capacity_kw": 1200,
+      "available_cooling_kw": 480
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 8,
+      "azure_expressroute": true,
+      "azure_available_circuits": 4,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 200
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 24,
+      "mpls_vpn_capacity": "50 Gbps",
+      "dark_fiber_strands": 12
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-002",
+    "name": "[MOCK] London Data Center - Secondary",
+    "location": "London, United Kingdom",
+    "region": "Europe",
+    "data_center_tier": "Tier 3+",
+    "capacity": {
+      "rack_units": 300,
+      "available_rack_units": 95,
+      "power_capacity_kw": 800,
+      "available_power_kw": 320,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 340
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 6,
+      "azure_expressroute": true,
+      "azure_available_circuits": 3,
+      "gcp_interconnect": true,
+      "gcp_available_links": 2,
+      "internet_uplink_gbps": 150
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 20,
+      "mpls_vpn_capacity": "40 Gbps",
+      "dark_fiber_strands": 8
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-003",
+    "name": "[MOCK] Singapore Hub - APAC Regional",
+    "location": "Singapore, Singapore",
+    "region": "Asia-Pacific",
+    "data_center_tier": "Tier 3",
+    "capacity": {
+      "rack_units": 250,
+      "available_rack_units": 110,
+      "power_capacity_kw": 650,
+      "available_power_kw": 280,
+      "cooling_capacity_kw": 650,
+      "available_cooling_kw": 300
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 5,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": true,
+      "gcp_available_links": 3,
+      "internet_uplink_gbps": 100
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 16,
+      "mpls_vpn_capacity": "30 Gbps",
+      "dark_fiber_strands": 6
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-004",
+    "name": "[MOCK] Frankfurt Data Center - EU",
+    "location": "Frankfurt, Germany",
+    "region": "Europe",
+    "data_center_tier": "Tier 4",
+    "capacity": {
+      "rack_units": 380,
+      "available_rack_units": 160,
+      "power_capacity_kw": 1050,
+      "available_power_kw": 400,
+      "cooling_capacity_kw": 1050,
+      "available_cooling_kw": 420
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 8,
+      "azure_expressroute": true,
+      "azure_available_circuits": 4,
+      "gcp_interconnect": true,
+      "gcp_available_links": 2,
+      "internet_uplink_gbps": 180
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 22,
+      "mpls_vpn_capacity": "45 Gbps",
+      "dark_fiber_strands": 10
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-005",
+    "name": "[MOCK] Toronto Edge Location",
+    "location": "Toronto, Canada",
+    "region": "North America",
+    "data_center_tier": "Tier 2+",
+    "capacity": {
+      "rack_units": 180,
+      "available_rack_units": 72,
+      "power_capacity_kw": 500,
+      "available_power_kw": 180,
+      "cooling_capacity_kw": 500,
+      "available_cooling_kw": 190
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 4,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 75
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 12,
+      "mpls_vpn_capacity": "20 Gbps",
+      "dark_fiber_strands": 4
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-006",
+    "name": "[MOCK] Tokyo Co-Location - APAC Primary",
+    "location": "Tokyo, Japan",
+    "region": "Asia-Pacific",
+    "data_center_tier": "Tier 3+",
+    "capacity": {
+      "rack_units": 220,
+      "available_rack_units": 88,
+      "power_capacity_kw": 600,
+      "available_power_kw": 220,
+      "cooling_capacity_kw": 600,
+      "available_cooling_kw": 240
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 5,
+      "azure_expressroute": true,
+      "azure_available_circuits": 3,
+      "gcp_interconnect": true,
+      "gcp_available_links": 4,
+      "internet_uplink_gbps": 120
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 14,
+      "mpls_vpn_capacity": "35 Gbps",
+      "dark_fiber_strands": 7
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-007",
+    "name": "[MOCK] São Paulo - South America Hub",
+    "location": "São Paulo, Brazil",
+    "region": "South America",
+    "data_center_tier": "Tier 3",
+    "capacity": {
+      "rack_units": 160,
+      "available_rack_units": 60,
+      "power_capacity_kw": 450,
+      "available_power_kw": 160,
+      "cooling_capacity_kw": 450,
+      "available_cooling_kw": 170
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 3,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": false,
+      "internet_uplink_gbps": 60
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 10,
+      "mpls_vpn_capacity": "25 Gbps",
+      "dark_fiber_strands": 3
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-008",
+    "name": "[MOCK] Sydney - APAC South",
+    "location": "Sydney, Australia",
+    "region": "Asia-Pacific",
+    "data_center_tier": "Tier 2+",
+    "capacity": {
+      "rack_units": 140,
+      "available_rack_units": 50,
+      "power_capacity_kw": 400,
+      "available_power_kw": 140,
+      "cooling_capacity_kw": 400,
+      "available_cooling_kw": 150
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 3,
+      "azure_expressroute": true,
+      "azure_available_circuits": 2,
+      "gcp_interconnect": true,
+      "gcp_available_links": 2,
+      "internet_uplink_gbps": 50
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 8,
+      "mpls_vpn_capacity": "20 Gbps",
+      "dark_fiber_strands": 2
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-009",
+    "name": "[MOCK] Amsterdam - European Gateway",
+    "location": "Amsterdam, Netherlands",
+    "region": "Europe",
+    "data_center_tier": "Tier 4",
+    "capacity": {
+      "rack_units": 340,
+      "available_rack_units": 140,
+      "power_capacity_kw": 950,
+      "available_power_kw": 350,
+      "cooling_capacity_kw": 950,
+      "available_cooling_kw": 370
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 7,
+      "azure_expressroute": true,
+      "azure_available_circuits": 4,
+      "gcp_interconnect": true,
+      "gcp_available_links": 3,
+      "internet_uplink_gbps": 160
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 20,
+      "mpls_vpn_capacity": "40 Gbps",
+      "dark_fiber_strands": 9
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  },
+  {
+    "id": "SITE-010",
+    "name": "[MOCK] Los Angeles - West Coast",
+    "location": "Los Angeles, USA",
+    "region": "North America",
+    "data_center_tier": "Tier 3+",
+    "capacity": {
+      "rack_units": 280,
+      "available_rack_units": 115,
+      "power_capacity_kw": 800,
+      "available_power_kw": 300,
+      "cooling_capacity_kw": 800,
+      "available_cooling_kw": 320
+    },
+    "cloud_onramp": {
+      "aws_direct_connect": true,
+      "aws_available_ports": 6,
+      "azure_expressroute": true,
+      "azure_available_circuits": 3,
+      "gcp_interconnect": true,
+      "gcp_available_links": 2,
+      "internet_uplink_gbps": 140
+    },
+    "connectivity": {
+      "metro_ethernet_ports": 18,
+      "mpls_vpn_capacity": "35 Gbps",
+      "dark_fiber_strands": 8
+    },
+    "inventory_last_updated": "2024-11-15",
+    "data_quality_label": "MOCK"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "id": "NP-DYCON-001",
+    "name": "[REAL] DyconIPVPN 10G Metro",
+    "type": "dycon_ipvpn",
+    "description": "Premium IPVPN service - DyconIPVPN 10G Metro",
+    "bandwidth": {
+      "value": 10,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 100,
+    "sla_uptime": 99.9,
+    "setup_cost": 15000,
+    "monthly_cost": 5500,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": [
+      "Dedicated IPVPN",
+      "24/7 Support",
+      "BGP redundancy",
+      "Traffic engineering"
+    ],
+    "data_quality_label": "[REAL - From DyconIPVPN catalog]"
+  },
+  {
+    "id": "NP-DYCON-002",
+    "name": "[REAL] DyconIPVPN 25G Metro",
+    "type": "dycon_ipvpn",
+    "description": "Premium IPVPN service - DyconIPVPN 25G Metro",
+    "bandwidth": {
+      "value": 25,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 100,
+    "sla_uptime": 99.95,
+    "setup_cost": 25000,
+    "monthly_cost": 8500,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": [
+      "Dedicated IPVPN",
+      "24/7 Support",
+      "BGP redundancy",
+      "Traffic engineering"
+    ],
+    "data_quality_label": "[REAL - From DyconIPVPN catalog]"
+  },
+  {
+    "id": "NP-DYCON-003",
+    "name": "[REAL] DyconIPVPN 50G Regional",
+    "type": "dycon_ipvpn",
+    "description": "Premium IPVPN service - DyconIPVPN 50G Regional",
+    "bandwidth": {
+      "value": 50,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 50,
+    "sla_uptime": 99.95,
+    "setup_cost": 35000,
+    "monthly_cost": 12000,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": [
+      "Dedicated IPVPN",
+      "24/7 Support",
+      "BGP redundancy",
+      "Traffic engineering"
+    ],
+    "data_quality_label": "[REAL - From DyconIPVPN catalog]"
+  },
+  {
+    "id": "NP-DYCON-004",
+    "name": "[REAL] DyconIPVPN 100G National",
+    "type": "dycon_ipvpn",
+    "description": "Premium IPVPN service - DyconIPVPN 100G National",
+    "bandwidth": {
+      "value": 100,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 50,
+    "sla_uptime": 99.99,
+    "setup_cost": 50000,
+    "monthly_cost": 18000,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": [
+      "Dedicated IPVPN",
+      "24/7 Support",
+      "BGP redundancy",
+      "Traffic engineering"
+    ],
+    "data_quality_label": "[REAL - From DyconIPVPN catalog]"
+  },
+  {
+    "id": "NP-DYCON-005",
+    "name": "[REAL] DyconIPVPN 200G National",
+    "type": "dycon_ipvpn",
+    "description": "Premium IPVPN service - DyconIPVPN 200G National",
+    "bandwidth": {
+      "value": 200,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 50,
+    "sla_uptime": 99.99,
+    "setup_cost": 80000,
+    "monthly_cost": 28000,
+    "lead_time_days": 30,
+    "currency": "USD",
+    "features": [
+      "Dedicated IPVPN",
+      "24/7 Support",
+      "BGP redundancy",
+      "Traffic engineering"
+    ],
+    "data_quality_label": "[REAL - From DyconIPVPN catalog]"
+  },
+  {
+    "id": "NP-GATEWAY-006",
+    "name": "[REAL] Multi-Cloud Gateway 100G",
+    "type": "gateway",
+    "description": "Multi-cloud interconnect gateway",
+    "bandwidth": {
+      "value": 100,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 10,
+    "sla_uptime": 99.99,
+    "setup_cost": 55000,
+    "monthly_cost": 25000,
+    "lead_time_days": 45,
+    "currency": "USD",
+    "features": [
+      "AWS Direct Connect",
+      "Azure ExpressRoute",
+      "GCP Interconnect",
+      "DDoS protection"
+    ],
+    "data_quality_label": "[REAL - Multi-Cloud Gateway]"
+  },
+  {
+    "id": "NP-GATEWAY-007",
+    "name": "[REAL] Multi-Cloud Gateway 200G",
+    "type": "gateway",
+    "description": "Multi-cloud interconnect gateway",
+    "bandwidth": {
+      "value": 200,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 10,
+    "sla_uptime": 99.99,
+    "setup_cost": 60000,
+    "monthly_cost": 30000,
+    "lead_time_days": 45,
+    "currency": "USD",
+    "features": [
+      "AWS Direct Connect",
+      "Azure ExpressRoute",
+      "GCP Interconnect",
+      "DDoS protection"
+    ],
+    "data_quality_label": "[REAL - Multi-Cloud Gateway]"
+  },
+  {
+    "id": "NP-GATEWAY-008",
+    "name": "[REAL] Multi-Cloud Gateway 400G",
+    "type": "gateway",
+    "description": "Multi-cloud interconnect gateway",
+    "bandwidth": {
+      "value": 400,
+      "unit": "Gbps",
+      "symmetry": "symmetric"
+    },
+    "latency_ms": 10,
+    "sla_uptime": 99.999,
+    "setup_cost": 70000,
+    "monthly_cost": 40000,
+    "lead_time_days": 45,
+    "currency": "USD",
+    "features": [
+      "AWS Direct Connect",
+      "Azure ExpressRoute",
+      "GCP Interconnect",
+      "DDoS protection"
+    ],
+    "data_quality_label": "[REAL - Multi-Cloud Gateway]"
+  }
+]
