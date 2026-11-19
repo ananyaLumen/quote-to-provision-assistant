@@ -68,6 +68,120 @@ const initialProposal = {
   ]
 };
 
+function mapQuoteStateToProposal(data) {
+  const requirement = data.requirement || {};
+  const validation = data.validation || {};
+  const network = data.network || {};
+  const software = data.software || {};
+
+  const requirements = [
+    requirement.bandwidth
+      ? `${requirement.bandwidth} connectivity between ${(requirement.sites || []).join(", ")}`
+      : null,
+
+    (requirement.clouds || []).length
+      ? `${requirement.clouds.join(" and ")} cloud connectivity`
+      : null,
+
+    requirement.sla
+      ? `${requirement.sla} availability SLA`
+      : null,
+
+    ...(requirement.integrations || []).map(
+      (integration) => `${integration} integration`
+    ),
+
+    requirement.timeline
+      ? `Target go-live in ${requirement.timeline}`
+      : null,
+  ].filter(Boolean);
+
+  const risks = (validation.risks || []).map((risk) => ({
+    level: risk.severity
+      ? risk.severity.charAt(0).toUpperCase() + risk.severity.slice(1)
+      : "Unknown",
+    title: risk.description || "Validation risk",
+    note: risk.description || "",
+  }));
+
+  const networkComponents = (network.bom || []).map((item) => [
+    item.item || "Network component",
+    String(item.quantity ?? ""),
+    "Stub solution",
+  ]);
+
+  const similar = (data.similar_projects || []).map((project) => ({
+    name: project.summary || project.project_id || "Similar project",
+    score:
+      typeof project.similarity === "number"
+        ? `${Math.round(project.similarity * 100)}%`
+        : "N/A",
+    lesson:
+      (project.technologies || []).length > 0
+        ? `Relevant technologies: ${project.technologies.join(", ")}`
+        : "Reference project",
+  }));
+
+  return {
+    id: data.request_id || "Pending",
+
+    name:
+      data.proposal?.title ||
+      "Quote-to-Provision Solution Proposal",
+
+    cost:
+      network.cost_range?.minimum || network.cost_range?.maximum
+        ? `${network.cost_range.currency || "USD"} ${
+            network.cost_range.minimum ?? 0
+          }–${network.cost_range.maximum ?? 0}`
+        : "Pricing pending",
+
+    risk: risks.length,
+
+    timeline: requirement.timeline || "TBD",
+
+    confidence:
+      typeof validation.confidence === "number"
+        ? `${Math.round(validation.confidence * 100)}%`
+        : "N/A",
+
+    status:
+      validation.feasible === true
+        ? "Validated with assumptions"
+        : "Requires review",
+
+    requirements,
+
+    assumptions: data.assumptions || [],
+
+    risks,
+
+    network: {
+      summary:
+        network.recommended_solution ||
+        "Network solution pending",
+
+      locations:
+        network.architecture?.sites || requirement.sites || [],
+
+      components: networkComponents,
+    },
+
+    software: {
+      stack: software.stack || [],
+
+      phases: [
+        ["Discovery & design", "Month 1"],
+        ["Network and platform foundation", "Months 2–3"],
+        ["Portal and integrations", "Months 3–4"],
+        ["Testing and go-live", requirement.timeline || "TBD"],
+      ],
+    },
+
+    similar,
+  };
+}
+
 function IconButton({ children, onClick, title }) {
   return <button className="icon-btn" onClick={onClick} title={title}>{children}</button>;
 }
@@ -309,24 +423,58 @@ function Export({ proposal }) {
 export default function App() {
   const [page, setPage] = useState('Dashboard');
   const [requirement, setRequirement] = useState(sampleRequirement);
+  const [quoteResult, setQuoteResult] = useState(null);
+  const [apiError, setApiError] = useState("");
   const [proposal, setProposal] = useState(initialProposal);
   const [progress, setProgress] = useState(0);
   const [tab, setTab] = useState('Network Design');
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const generate = () => {
+  const generate = async () => {
+  if (!requirement.trim()) return;
+
+  setApiError("");
+  setProgress(10);
+  setPage("AI Processing");
+
+  try {
+    setProgress(30);
+
+    const response = await fetch("http://127.0.0.1:8000/quote", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        requirement_text: requirement,
+      }),
+    });
+
+    setProgress(70);
+
+    if (!response.ok) {
+      throw new Error(`Quote API failed with status ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    setQuoteResult(data);
+
+    const mappedProposal = mapQuoteStateToProposal(data);
+    setProposal(mappedProposal);
+
+setProgress(100);
+
+    setTimeout(() => {
+      setPage("Proposal Overview");
+    }, 400);
+  } catch (error) {
+    console.error("Quote generation failed:", error);
+    setApiError(error.message);
     setProgress(0);
-    setPage('AI Processing');
-    let value = 0;
-    const timer = setInterval(() => {
-      value += 10;
-      setProgress(value);
-      if (value >= 100) {
-        clearInterval(timer);
-        setProposal(p => ({ ...p, id: `QTP-2026-${String(Math.floor(1000 + Math.random()*8999))}` }));
-      }
-    }, 260);
-  };
+    setPage("Dashboard");
+  }
+};
 
   const titles = {
     'Dashboard': 'Dashboard',
